@@ -1,0 +1,4502 @@
+{
+ "actualizado": "2026-10-24T15:14",
+ "modelos": [
+  {
+   "id": "ecmwf_ifs",
+   "nombre": "ECMWF (Europa)"
+  },
+  {
+   "id": "gfs_seamless",
+   "nombre": "GFS (EE.UU.)"
+  },
+  {
+   "id": "icon_seamless",
+   "nombre": "ICON (Alemania)"
+  },
+  {
+   "id": "gem_seamless",
+   "nombre": "GEM (Canadá)"
+  },
+  {
+   "id": "meteofrance_seamless",
+   "nombre": "Météo-France"
+  },
+  {
+   "id": "ukmo_seamless",
+   "nombre": "UKMO (Reino Unido)"
+  },
+  {
+   "id": "jma_seamless",
+   "nombre": "JMA (Japón)"
+  }
+ ],
+ "metodo": "Máxima, mínima y viento: a cada modelo le restamos su error típico en esta ciudad (últimos 30 días) y pesa más el que menos se equivocó. Lluvia: porcentaje de modelos que dan al menos 0.5 mm en el día. La tabla muestra lo que dice cada modelo sin corregir.",
+ "ciudades": [
+  {
+   "id": "caba",
+   "nombre": "CABA",
+   "aeropuertos": [
+    "SABE"
+   ],
+   "ahora": {
+    "aeropuerto": "SABE",
+    "nombre": "Aeroparque",
+    "hora": "2026-10-24T15:00",
+    "temp": 16,
+    "punto_rocio": 13,
+    "viento": 24,
+    "rafagas": null,
+    "tiempo": "llovizna débil",
+    "llueve": true,
+    "crudo": "METAR SABE 241800Z 11013KT 5000 -DZ FEW011 SCT023 BKN038 16/13 Q1015 TEMPO 3000 SHRA BKN025"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 17,
+     "min": 12,
+     "viento": 26,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 1.6,
+     "franjas_lluvia": [
+      "tarde"
+     ],
+     "rafagas": 39,
+     "nubes": 92,
+     "cape": 80,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 13,
+       "mm": 3.6,
+       "rafagas": 45
+      },
+      "gfs_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 2.6,
+       "rafagas": 37
+      },
+      "icon_seamless": {
+       "max": 17,
+       "min": 12,
+       "mm": 1.3,
+       "rafagas": 34
+      },
+      "gem_seamless": {
+       "max": 17,
+       "min": 13,
+       "mm": 0.4,
+       "rafagas": 42
+      },
+      "meteofrance_seamless": {
+       "max": 16,
+       "min": 13,
+       "mm": 1.6,
+       "rafagas": 39
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 1.9,
+       "rafagas": 36
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 1.2,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 86,
+      "modelos_con_lluvia": 6,
+      "modelos_total": 7,
+      "mm": 1.3,
+      "franjas_lluvia": [
+       "tarde"
+      ],
+      "rafagas": 37,
+      "nubes": 95,
+      "cape": 80,
+      "cielo": "lluvia",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "Atenti: llueve a la tarde. Hacé los mandados antes o dejalos para después.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 17,
+     "min": 11,
+     "viento": 24,
+     "prob_lluvia": 29,
+     "modelos_con_lluvia": 2,
+     "modelos_total": 7,
+     "mm": 0.3,
+     "franjas_lluvia": [],
+     "rafagas": 35,
+     "nubes": 70,
+     "cape": 45,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.2,
+       "rafagas": 38
+      },
+      "gfs_seamless": {
+       "max": 16,
+       "min": 10,
+       "mm": 0.3,
+       "rafagas": 33
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.3,
+       "rafagas": 32
+      },
+      "gem_seamless": {
+       "max": 17,
+       "min": 12,
+       "mm": 0.4,
+       "rafagas": 36
+      },
+      "meteofrance_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": 37
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 0.6,
+       "rafagas": 34
+      },
+      "jma_seamless": {
+       "max": 15,
+       "min": 13,
+       "mm": 1.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Nublado pero sin lluvia. Gris, pero seco: no todo es malo.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 16,
+     "min": 9,
+     "viento": 20,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 49,
+     "cape": 45,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 15,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "gfs_seamless": {
+       "max": 15,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 17,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 16,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "meteofrance_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.1,
+       "rafagas": 24
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Fresco temprano (9), templado después (16). El clásico día de olvidarse el buzo en algún lado.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 19,
+     "min": 13,
+     "viento": 20,
+     "prob_lluvia": 43,
+     "modelos_con_lluvia": 3,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 26,
+     "nubes": 81,
+     "cape": 35,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 13,
+       "mm": 1.1,
+       "rafagas": 30
+      },
+      "gfs_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.6,
+       "rafagas": 27
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 14,
+       "mm": 0.7,
+       "rafagas": 23
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "jma_seamless": {
+       "max": 20,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Cielo indeciso. Paraguas en la mochila y a la calle.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 17,
+     "prob": 47,
+     "mm": 0.2,
+     "rafagas": 32,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 16,
+     "prob": 55,
+     "mm": 0.2,
+     "rafagas": 34,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 16,
+     "prob": 52,
+     "mm": 0.3,
+     "rafagas": 34,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 15,
+     "prob": 53,
+     "mm": 0.2,
+     "rafagas": 33,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 15,
+     "prob": 47,
+     "mm": 0.1,
+     "rafagas": 31,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 15,
+     "prob": 37,
+     "mm": 0.1,
+     "rafagas": 32,
+     "nubes": 87
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 14,
+     "prob": 26,
+     "mm": 0.1,
+     "rafagas": 33,
+     "nubes": 77
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 14,
+     "prob": 16,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 59
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 13,
+     "prob": 7,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 66
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 13,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 73
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 13,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 78
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 12,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 80
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 12,
+     "prob": 9,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 82
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 12,
+     "prob": 16,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 86
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 11,
+     "prob": 22,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 11,
+     "prob": 24,
+     "mm": 0.1,
+     "rafagas": 30,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 11,
+     "prob": 26,
+     "mm": 0.1,
+     "rafagas": 31,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 11,
+     "prob": 20,
+     "mm": 0.1,
+     "rafagas": 32,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 12,
+     "prob": 10,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 93
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 12,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 13,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 76
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 14,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 79
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 15,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 73
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 15,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 63
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "gba-norte",
+   "nombre": "GBA Norte",
+   "aeropuertos": [
+    "SADF"
+   ],
+   "ahora": {
+    "aeropuerto": "SADF",
+    "nombre": "San Fernando",
+    "hora": "2026-10-24T15:12",
+    "temp": 16,
+    "punto_rocio": 13,
+    "viento": 13,
+    "rafagas": null,
+    "tiempo": "llovizna débil",
+    "llueve": true,
+    "crudo": "SPECI SADF 241812Z 13007KT 9000 -DZ BKN010 OVC030 16/13 Q1015"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 18,
+     "min": 12,
+     "viento": 25,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 1.6,
+     "franjas_lluvia": [
+      "tarde"
+     ],
+     "rafagas": 38,
+     "nubes": 92,
+     "cape": 85,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 12,
+       "mm": 2.9,
+       "rafagas": 37
+      },
+      "gfs_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 1.9,
+       "rafagas": 37
+      },
+      "icon_seamless": {
+       "max": 17,
+       "min": 13,
+       "mm": 1.6,
+       "rafagas": 38
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 0.9,
+       "rafagas": 38
+      },
+      "meteofrance_seamless": {
+       "max": 16,
+       "min": 13,
+       "mm": 1.6,
+       "rafagas": 39
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 1.5,
+       "rafagas": 38
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 1.2,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 100,
+      "modelos_con_lluvia": 7,
+      "modelos_total": 7,
+      "mm": 1.5,
+      "franjas_lluvia": [
+       "tarde"
+      ],
+      "rafagas": 37,
+      "nubes": 95,
+      "cape": 85,
+      "cielo": "lluvia",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "Se viene agua a la tarde. Llevá paraguas aunque al salir parezca que no.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 17,
+     "min": 10,
+     "viento": 22,
+     "prob_lluvia": 29,
+     "modelos_con_lluvia": 2,
+     "modelos_total": 7,
+     "mm": 0.3,
+     "franjas_lluvia": [],
+     "rafagas": 34,
+     "nubes": 78,
+     "cape": 60,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 15,
+       "min": 10,
+       "mm": 0.3,
+       "rafagas": 36
+      },
+      "gfs_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 0.1,
+       "rafagas": 33
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.3,
+       "rafagas": 35
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.1,
+       "rafagas": 31
+      },
+      "meteofrance_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": 37
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 11,
+       "mm": 0.8,
+       "rafagas": 32
+      },
+      "jma_seamless": {
+       "max": 15,
+       "min": 13,
+       "mm": 1.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Cielo cubierto, sin agua a la vista. El paraguas puede descansar mañana.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 17,
+     "min": 9,
+     "viento": 18,
+     "prob_lluvia": 14,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 7,
+     "mm": 0.1,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 50,
+     "cape": 45,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 15,
+       "min": 8,
+       "mm": 0.3,
+       "rafagas": 32
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 2.3,
+       "rafagas": 16
+      },
+      "meteofrance_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.1,
+       "rafagas": 24
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Mañana fresquita de 9. Vestite en capas, como cebolla: te sacás a medida que sube.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 20,
+     "min": 12,
+     "viento": 17,
+     "prob_lluvia": 29,
+     "modelos_con_lluvia": 2,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 82,
+     "cape": 35,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 12,
+       "mm": 2.2,
+       "rafagas": 26
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 18,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "gem_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 17
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 14,
+       "mm": 0.7,
+       "rafagas": 23
+      },
+      "ukmo_seamless": {
+       "max": 20,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "jma_seamless": {
+       "max": 20,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Nublado pero sin lluvia. Gris, pero seco: no todo es malo.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 16,
+     "prob": 43,
+     "mm": 0.4,
+     "rafagas": 31,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 16,
+     "prob": 48,
+     "mm": 0.2,
+     "rafagas": 33,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 16,
+     "prob": 53,
+     "mm": 0.3,
+     "rafagas": 34,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 15,
+     "prob": 52,
+     "mm": 0.2,
+     "rafagas": 34,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 15,
+     "prob": 50,
+     "mm": 0.1,
+     "rafagas": 33,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 14,
+     "prob": 41,
+     "mm": 0.1,
+     "rafagas": 33,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 14,
+     "prob": 31,
+     "mm": 0.1,
+     "rafagas": 34,
+     "nubes": 78
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 14,
+     "prob": 21,
+     "mm": 0.0,
+     "rafagas": 34,
+     "nubes": 60
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 13,
+     "prob": 11,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 67
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 13,
+     "prob": 6,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 68
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 13,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 76
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 12,
+     "prob": 8,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 76
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 12,
+     "prob": 13,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 82
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 12,
+     "prob": 20,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 79
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 11,
+     "prob": 22,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 11,
+     "prob": 26,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 11,
+     "prob": 27,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 12,
+     "prob": 22,
+     "mm": 0.1,
+     "rafagas": 32,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 12,
+     "prob": 18,
+     "mm": 0.1,
+     "rafagas": 32,
+     "nubes": 93
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 12,
+     "prob": 11,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 13,
+     "prob": 7,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 82
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 14,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 81
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 14,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 75
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 15,
+     "prob": 6,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 72
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "gba-sur-oeste",
+   "nombre": "GBA Sur y Oeste",
+   "aeropuertos": [
+    "SAEZ",
+    "SADP"
+   ],
+   "ahora": {
+    "aeropuerto": "SAEZ",
+    "nombre": "Ezeiza",
+    "hora": "2026-10-24T15:00",
+    "temp": 17,
+    "punto_rocio": 12,
+    "viento": 20,
+    "rafagas": null,
+    "tiempo": "cubierto",
+    "llueve": false,
+    "crudo": "METAR SAEZ 241800Z 16011KT 9999 FEW023 BKN040 OVC060 17/12 Q1015 TEMPO 7000 -SHRA BKN025"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 17,
+     "min": 11,
+     "viento": 26,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 1.4,
+     "franjas_lluvia": [
+      "tarde",
+      "noche"
+     ],
+     "rafagas": 36,
+     "nubes": 92,
+     "cape": 70,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 12,
+       "mm": 2.2,
+       "rafagas": 37
+      },
+      "gfs_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 1.9,
+       "rafagas": 37
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 1.2,
+       "rafagas": 34
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 0.4,
+       "rafagas": 39
+      },
+      "meteofrance_seamless": {
+       "max": 15,
+       "min": 12,
+       "mm": 1.4,
+       "rafagas": 35
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 2.0,
+       "rafagas": 34
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 1.2,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 86,
+      "modelos_con_lluvia": 6,
+      "modelos_total": 7,
+      "mm": 1.3,
+      "franjas_lluvia": [
+       "tarde",
+       "noche"
+      ],
+      "rafagas": 34,
+      "nubes": 95,
+      "cape": 70,
+      "cielo": "lluvia",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "Lluvia a la tarde y a la noche. El paraguas va en la mochila, no en el perchero.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 17,
+     "min": 10,
+     "viento": 25,
+     "prob_lluvia": 57,
+     "modelos_con_lluvia": 4,
+     "modelos_total": 7,
+     "mm": 0.5,
+     "franjas_lluvia": [],
+     "rafagas": 33,
+     "nubes": 74,
+     "cape": 45,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 16,
+       "min": 9,
+       "mm": 0.5,
+       "rafagas": 36
+      },
+      "gfs_seamless": {
+       "max": 16,
+       "min": 9,
+       "mm": 0.2,
+       "rafagas": 33
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 10,
+       "mm": 0.6,
+       "rafagas": 31
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.2,
+       "rafagas": 32
+      },
+      "meteofrance_seamless": {
+       "max": 17,
+       "min": 11,
+       "mm": 0.1,
+       "rafagas": 34
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 0.8,
+       "rafagas": 30
+      },
+      "jma_seamless": {
+       "max": 15,
+       "min": 13,
+       "mm": 1.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Ni sí ni no. Hay chances de lluvia: paraguas plegable y que la suerte te acompañe.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 18,
+     "min": 7,
+     "viento": 19,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 22,
+     "nubes": 58,
+     "cape": 50,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 16,
+       "min": 7,
+       "mm": 0.2,
+       "rafagas": 18
+      },
+      "gfs_seamless": {
+       "max": 19,
+       "min": 7,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 17,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "meteofrance_seamless": {
+       "max": 18,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Mañana fresquita de 7. Vestite en capas, como cebolla: te sacás a medida que sube.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 20,
+     "min": 11,
+     "viento": 19,
+     "prob_lluvia": 14,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 23,
+     "nubes": 84,
+     "cape": 40,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.6,
+       "rafagas": 21
+      },
+      "gfs_seamless": {
+       "max": 21,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 18
+      },
+      "meteofrance_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "ukmo_seamless": {
+       "max": 20,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "jma_seamless": {
+       "max": 20,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Cielo cubierto, sin agua a la vista. El paraguas puede descansar el martes.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 16,
+     "prob": 48,
+     "mm": 0.1,
+     "rafagas": 31,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 16,
+     "prob": 56,
+     "mm": 0.2,
+     "rafagas": 32,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 15,
+     "prob": 52,
+     "mm": 0.2,
+     "rafagas": 32,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 15,
+     "prob": 56,
+     "mm": 0.2,
+     "rafagas": 31,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 14,
+     "prob": 45,
+     "mm": 0.1,
+     "rafagas": 29,
+     "nubes": 87
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 14,
+     "prob": 33,
+     "mm": 0.2,
+     "rafagas": 30,
+     "nubes": 87
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 13,
+     "prob": 22,
+     "mm": 0.1,
+     "rafagas": 30,
+     "nubes": 77
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 13,
+     "prob": 15,
+     "mm": 0.0,
+     "rafagas": 28,
+     "nubes": 63
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 13,
+     "prob": 6,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 70
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 12,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 73
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 12,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 65
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 11,
+     "prob": 6,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 81
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 11,
+     "prob": 11,
+     "mm": 0.0,
+     "rafagas": 28,
+     "nubes": 79
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 11,
+     "prob": 18,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 11,
+     "prob": 21,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 11,
+     "prob": 25,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 11,
+     "prob": 27,
+     "mm": 0.1,
+     "rafagas": 28,
+     "nubes": 88
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 11,
+     "prob": 20,
+     "mm": 0.1,
+     "rafagas": 30,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 11,
+     "prob": 10,
+     "mm": 0.1,
+     "rafagas": 31,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 12,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 87
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 13,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 79
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 14,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 28,
+     "nubes": 77
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 15,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 74
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 15,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 25,
+     "nubes": 71
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "la-plata",
+   "nombre": "La Plata",
+   "aeropuertos": [
+    "SADL"
+   ],
+   "ahora": {
+    "aeropuerto": "SADL",
+    "nombre": "La Plata",
+    "hora": "2026-10-24T15:00",
+    "temp": 18,
+    "punto_rocio": 10,
+    "viento": 24,
+    "rafagas": null,
+    "tiempo": "mayormente nublado",
+    "llueve": false,
+    "crudo": "METAR SADL 241800Z 14013KT 9999 SCT022TCU BKN027 18/10 Q1015"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 17,
+     "min": 11,
+     "viento": 24,
+     "prob_lluvia": 71,
+     "modelos_con_lluvia": 5,
+     "modelos_total": 7,
+     "mm": 0.9,
+     "franjas_lluvia": [
+      "tarde"
+     ],
+     "rafagas": 40,
+     "nubes": 90,
+     "cape": 75,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 12,
+       "mm": 1.4,
+       "rafagas": 47
+      },
+      "gfs_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 0.9,
+       "rafagas": 38
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.5,
+       "rafagas": 37
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": 42
+      },
+      "meteofrance_seamless": {
+       "max": 15,
+       "min": 12,
+       "mm": 2.1,
+       "rafagas": 32
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 1.0,
+       "rafagas": 41
+      },
+      "jma_seamless": {
+       "max": 17,
+       "min": 13,
+       "mm": 0.2,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 43,
+      "modelos_con_lluvia": 3,
+      "modelos_total": 7,
+      "mm": 0.2,
+      "franjas_lluvia": [],
+      "rafagas": 38,
+      "nubes": 90,
+      "cape": 60,
+      "cielo": "dudoso",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "Cielo indeciso. Paraguas en la mochila y a la calle.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 16,
+     "min": 9,
+     "viento": 21,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 0.9,
+     "franjas_lluvia": [
+      "manana"
+     ],
+     "rafagas": 36,
+     "nubes": 64,
+     "cape": 55,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 16,
+       "min": 10,
+       "mm": 0.2,
+       "rafagas": 40
+      },
+      "gfs_seamless": {
+       "max": 16,
+       "min": 9,
+       "mm": 1.0,
+       "rafagas": 35
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 10,
+       "mm": 0.9,
+       "rafagas": 35
+      },
+      "gem_seamless": {
+       "max": 17,
+       "min": 11,
+       "mm": 0.9,
+       "rafagas": 38
+      },
+      "meteofrance_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.5,
+       "rafagas": 34
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 0.6,
+       "rafagas": 34
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 1.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Llueve a la mañana. Si colgaste ropa, ya sabés lo que tenés que hacer.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 16,
+     "min": 7,
+     "viento": 15,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 22,
+     "nubes": 57,
+     "cape": 30,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 16,
+       "min": 8,
+       "mm": 0.2,
+       "rafagas": 23
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 7,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 20
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 6,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "meteofrance_seamless": {
+       "max": 17,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "ukmo_seamless": {
+       "max": 16,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Mañana fresquita de 7. Vestite en capas, como cebolla: te sacás a medida que sube.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 18,
+     "min": 10,
+     "viento": 15,
+     "prob_lluvia": 14,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 78,
+     "cape": 50,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 10,
+       "mm": 0.6,
+       "rafagas": 27
+      },
+      "gfs_seamless": {
+       "max": 21,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "icon_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "jma_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día gris, 18 de máxima. No llueve, aunque tenga cara de que sí.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 16,
+     "prob": 46,
+     "mm": 0.1,
+     "rafagas": 36,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 15,
+     "prob": 42,
+     "mm": 0.1,
+     "rafagas": 37,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 15,
+     "prob": 36,
+     "mm": 0.1,
+     "rafagas": 36,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 15,
+     "prob": 28,
+     "mm": 0.1,
+     "rafagas": 35,
+     "nubes": 88
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 14,
+     "prob": 22,
+     "mm": 0.1,
+     "rafagas": 34,
+     "nubes": 78
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 13,
+     "prob": 12,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 74
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 13,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 75
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 12,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 69
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 12,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 68
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 11,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 65
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 11,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 78
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 11,
+     "prob": 11,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 84
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 10,
+     "prob": 15,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 10,
+     "prob": 16,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 10,
+     "prob": 26,
+     "mm": 0.2,
+     "rafagas": 30,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 10,
+     "prob": 29,
+     "mm": 0.2,
+     "rafagas": 31,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 10,
+     "prob": 23,
+     "mm": 0.1,
+     "rafagas": 33,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 10,
+     "prob": 14,
+     "mm": 0.1,
+     "rafagas": 34,
+     "nubes": 93
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 11,
+     "prob": 6,
+     "mm": 0.1,
+     "rafagas": 33,
+     "nubes": 86
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 12,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 78
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 13,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 75
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 14,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 72
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 15,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 52
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 15,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 58
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "cordoba",
+   "nombre": "Córdoba",
+   "aeropuertos": [
+    "SACO"
+   ],
+   "ahora": {
+    "aeropuerto": "SACO",
+    "nombre": "Córdoba",
+    "hora": "2026-10-24T15:00",
+    "temp": 19,
+    "punto_rocio": 9,
+    "viento": 28,
+    "rafagas": null,
+    "tiempo": "mayormente nublado",
+    "llueve": false,
+    "crudo": "METAR SACO 241800Z 18015KT 9999 BKN042 19/09 Q1018 NOSIG"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 19,
+     "min": 10,
+     "viento": 32,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 1.2,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 45,
+     "nubes": 71,
+     "cape": 175,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 20,
+       "min": 12,
+       "mm": 6.2,
+       "rafagas": 47
+      },
+      "gfs_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.6,
+       "rafagas": 38
+      },
+      "icon_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 0.9,
+       "rafagas": 54
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 11,
+       "mm": 9.6,
+       "rafagas": 43
+      },
+      "meteofrance_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 1.2,
+       "rafagas": 46
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 3.3,
+       "rafagas": 45
+      },
+      "jma_seamless": {
+       "max": 21,
+       "min": 15,
+       "mm": 0.6,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 45,
+      "nubes": 69,
+      "cape": 80,
+      "cielo": "parcial",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "Paró. El resto del día, sin agua: el paraguas puede volver al perchero.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 20,
+     "min": 8,
+     "viento": 26,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 37,
+     "nubes": 42,
+     "cape": 20,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 19,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "gfs_seamless": {
+       "max": 21,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "gem_seamless": {
+       "max": 20,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "meteofrance_seamless": {
+       "max": 21,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "jma_seamless": {
+       "max": 23,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 8 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 21,
+     "min": 8,
+     "viento": 27,
+     "prob_lluvia": 14,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 35,
+     "nubes": 65,
+     "cape": 15,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 19,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gfs_seamless": {
+       "max": 23,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "icon_seamless": {
+       "max": 20,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 44
+      },
+      "gem_seamless": {
+       "max": 21,
+       "min": 7,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "meteofrance_seamless": {
+       "max": 23,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "jma_seamless": {
+       "max": 25,
+       "min": 15,
+       "mm": 0.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 8 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 19,
+     "min": 11,
+     "viento": 24,
+     "prob_lluvia": 43,
+     "modelos_con_lluvia": 3,
+     "modelos_total": 7,
+     "mm": 0.4,
+     "franjas_lluvia": [],
+     "rafagas": 30,
+     "nubes": 87,
+     "cape": 130,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 13,
+       "mm": 7.4,
+       "rafagas": 32
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 14,
+       "mm": 1.8,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.3,
+       "rafagas": 26
+      },
+      "gem_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 0.4,
+       "rafagas": 26
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "ukmo_seamless": {
+       "max": 20,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 15,
+       "mm": 6.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Cielo indeciso. Paraguas en la mochila y a la calle.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 18,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 39,
+     "nubes": 68
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 18,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 40,
+     "nubes": 65
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 17,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 42,
+     "nubes": 70
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 16,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 42,
+     "nubes": 74
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 15,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 41,
+     "nubes": 84
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 38,
+     "nubes": 75
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 13,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 35,
+     "nubes": 73
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 87
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 12,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 65
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 12,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 48
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 11,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 43
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 11,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 30
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 10,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 19
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 10,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 10
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 10,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 5
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 9,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 23,
+     "nubes": 12
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 9,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 23,
+     "nubes": 20
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 11,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 16
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 12,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 32
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 14,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 36
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 15,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 43
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 16,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 41
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 17,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 28,
+     "nubes": 39
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 18,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 38
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "rosario",
+   "nombre": "Rosario",
+   "aeropuertos": [
+    "SAAR"
+   ],
+   "ahora": {
+    "aeropuerto": "SAAR",
+    "nombre": "Rosario",
+    "hora": "2026-10-24T15:00",
+    "temp": 18,
+    "punto_rocio": 12,
+    "viento": 20,
+    "rafagas": null,
+    "tiempo": "cubierto",
+    "llueve": false,
+    "crudo": "METAR SAAR 241800Z 19011KT 9999 SCT030 OVC035 18/12 Q1015"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 19,
+     "min": 12,
+     "viento": 30,
+     "prob_lluvia": 14,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 7,
+     "mm": 0.2,
+     "franjas_lluvia": [],
+     "rafagas": 42,
+     "nubes": 81,
+     "cape": 105,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 45
+      },
+      "gfs_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": 44
+      },
+      "icon_seamless": {
+       "max": 17,
+       "min": 14,
+       "mm": 0.1,
+       "rafagas": 44
+      },
+      "gem_seamless": {
+       "max": 17,
+       "min": 13,
+       "mm": 1.1,
+       "rafagas": 40
+      },
+      "meteofrance_seamless": {
+       "max": 17,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 0.3,
+       "rafagas": 41
+      },
+      "jma_seamless": {
+       "max": 20,
+       "min": 16,
+       "mm": 0.4,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 14,
+      "modelos_con_lluvia": 1,
+      "modelos_total": 7,
+      "mm": 0.2,
+      "franjas_lluvia": [],
+      "rafagas": 39,
+      "nubes": 81,
+      "cape": 105,
+      "cielo": "nublado",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "Nublado pero sin lluvia. Gris, pero seco: no todo es malo.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 18,
+     "min": 10,
+     "viento": 24,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 1.6,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 30,
+     "nubes": 64,
+     "cape": 160,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 13,
+       "mm": 4.3,
+       "rafagas": 30
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 1.6,
+       "rafagas": 32
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 12,
+       "mm": 0.1,
+       "rafagas": 37
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 12.0,
+       "rafagas": 25
+      },
+      "meteofrance_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 1.4,
+       "rafagas": 26
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 12,
+       "mm": 5.0,
+       "rafagas": 31
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 1.4,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Llueve de madrugada. Si colgaste ropa, ya sabés lo que tenés que hacer.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 20,
+     "min": 8,
+     "viento": 19,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 22,
+     "nubes": 47,
+     "cape": 45,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 12,
+       "mm": 0.1,
+       "rafagas": 20
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "icon_seamless": {
+       "max": 20,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 17
+      },
+      "meteofrance_seamless": {
+       "max": 20,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 21
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 20
+      },
+      "jma_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 8 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 22,
+     "min": 10,
+     "viento": 20,
+     "prob_lluvia": 29,
+     "modelos_con_lluvia": 2,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 24,
+     "nubes": 91,
+     "cape": 25,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 12,
+       "mm": 2.4,
+       "rafagas": 19
+      },
+      "gfs_seamless": {
+       "max": 25,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "icon_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": 24
+      },
+      "gem_seamless": {
+       "max": 20,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 20
+      },
+      "meteofrance_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 0.5,
+       "rafagas": 19
+      },
+      "ukmo_seamless": {
+       "max": 21,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "jma_seamless": {
+       "max": 22,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Nublado pero sin lluvia. Gris, pero seco: no todo es malo.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 17,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 36,
+     "nubes": 86
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 17,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 37,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 17,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 36,
+     "nubes": 84
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 16,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 65
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 16,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 67
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 15,
+     "prob": 11,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 76
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 15,
+     "prob": 20,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 66
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 14,
+     "prob": 23,
+     "mm": 0.1,
+     "rafagas": 30,
+     "nubes": 56
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 14,
+     "prob": 25,
+     "mm": 0.1,
+     "rafagas": 30,
+     "nubes": 67
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 13,
+     "prob": 31,
+     "mm": 0.2,
+     "rafagas": 26,
+     "nubes": 86
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 13,
+     "prob": 38,
+     "mm": 0.3,
+     "rafagas": 23,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 13,
+     "prob": 46,
+     "mm": 0.6,
+     "rafagas": 22,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 13,
+     "prob": 46,
+     "mm": 0.6,
+     "rafagas": 21,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 12,
+     "prob": 45,
+     "mm": 0.6,
+     "rafagas": 21,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 12,
+     "prob": 37,
+     "mm": 0.4,
+     "rafagas": 22,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 12,
+     "prob": 25,
+     "mm": 0.2,
+     "rafagas": 22,
+     "nubes": 87
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 12,
+     "prob": 20,
+     "mm": 0.1,
+     "rafagas": 24,
+     "nubes": 81
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 12,
+     "prob": 11,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 68
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 13,
+     "prob": 9,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 72
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 14,
+     "prob": 13,
+     "mm": 0.0,
+     "rafagas": 28,
+     "nubes": 71
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 15,
+     "prob": 16,
+     "mm": 0.1,
+     "rafagas": 26,
+     "nubes": 58
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 15,
+     "prob": 25,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 56
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 16,
+     "prob": 28,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 74
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 16,
+     "prob": 30,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 68
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "mendoza",
+   "nombre": "Mendoza",
+   "aeropuertos": [
+    "SAME"
+   ],
+   "ahora": {
+    "aeropuerto": "SAME",
+    "nombre": "Mendoza",
+    "hora": "2026-10-24T15:00",
+    "temp": 11,
+    "punto_rocio": 9,
+    "viento": 24,
+    "rafagas": null,
+    "tiempo": "lluvia",
+    "llueve": true,
+    "crudo": "METAR SAME 241800Z COR 21013KT 7000 RA SCT015 BKN020 11/09 Q1023"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 15,
+     "min": 9,
+     "viento": 27,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 13.5,
+     "franjas_lluvia": [
+      "madrugada",
+      "manana",
+      "tarde"
+     ],
+     "rafagas": 40,
+     "nubes": 93,
+     "cape": 240,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 13,
+       "min": 9,
+       "mm": 6.8,
+       "rafagas": 49
+      },
+      "gfs_seamless": {
+       "max": 14,
+       "min": 11,
+       "mm": 17.3,
+       "rafagas": 38
+      },
+      "icon_seamless": {
+       "max": 13,
+       "min": 10,
+       "mm": 13.5,
+       "rafagas": 43
+      },
+      "gem_seamless": {
+       "max": 12,
+       "min": 9,
+       "mm": 9.4,
+       "rafagas": 31
+      },
+      "meteofrance_seamless": {
+       "max": 14,
+       "min": 9,
+       "mm": 25.2,
+       "rafagas": 41
+      },
+      "ukmo_seamless": {
+       "max": 11,
+       "min": 8,
+       "mm": 13.5,
+       "rafagas": 37
+      },
+      "jma_seamless": {
+       "max": 14,
+       "min": 10,
+       "mm": 22.0,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 100,
+      "modelos_con_lluvia": 7,
+      "modelos_total": 7,
+      "mm": 2.9,
+      "franjas_lluvia": [
+       "tarde"
+      ],
+      "rafagas": 39,
+      "nubes": 91,
+      "cape": 115,
+      "cielo": "lluvia",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "⚠️ Alerta amarilla del SMN por lluvias en Mendoza hasta las 3 h. Seguí las indicaciones oficiales.",
+      "situacion": "alerta",
+      "seria": true
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 19,
+     "min": 7,
+     "viento": 19,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 44,
+     "cape": 30,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 16,
+       "min": 7,
+       "mm": 0.1,
+       "rafagas": 33
+      },
+      "gfs_seamless": {
+       "max": 20,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 17
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 6,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 17,
+       "min": 5,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "meteofrance_seamless": {
+       "max": 18,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 7,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 11,
+       "mm": 0.4,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 7 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 21,
+     "min": 10,
+     "viento": 18,
+     "prob_lluvia": 29,
+     "modelos_con_lluvia": 2,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 22,
+     "nubes": 64,
+     "cape": 10,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 19,
+       "min": 8,
+       "mm": 0.4,
+       "rafagas": 27
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 14
+      },
+      "icon_seamless": {
+       "max": 21,
+       "min": 9,
+       "mm": 0.8,
+       "rafagas": 21
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 15
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 0.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Sin lluvia y con 21 de máxima. Vestite como quieras, el lunes el clima no se mete.",
+      "situacion": "templado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 21,
+     "min": 13,
+     "viento": 26,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 5.4,
+     "franjas_lluvia": [
+      "manana",
+      "tarde"
+     ],
+     "rafagas": 38,
+     "nubes": 67,
+     "cape": 625,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 11,
+       "mm": 6.9,
+       "rafagas": 63
+      },
+      "gfs_seamless": {
+       "max": 24,
+       "min": 15,
+       "mm": 0.9,
+       "rafagas": 35
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 7.2,
+       "rafagas": 46
+      },
+      "gem_seamless": {
+       "max": 20,
+       "min": 10,
+       "mm": 1.1,
+       "rafagas": 28
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 14,
+       "mm": 2.1,
+       "rafagas": 29
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 6.6,
+       "rafagas": 28
+      },
+      "jma_seamless": {
+       "max": 17,
+       "min": 13,
+       "mm": 5.4,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "A la mañana y a la tarde se larga. Organizate para no quedar como sopa en la parada.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 13,
+     "prob": 71,
+     "mm": 0.4,
+     "rafagas": 34,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 12,
+     "prob": 71,
+     "mm": 0.5,
+     "rafagas": 35,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 12,
+     "prob": 76,
+     "mm": 0.7,
+     "rafagas": 34,
+     "nubes": 89
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 12,
+     "prob": 74,
+     "mm": 0.6,
+     "rafagas": 34,
+     "nubes": 86
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 12,
+     "prob": 67,
+     "mm": 0.4,
+     "rafagas": 33,
+     "nubes": 79
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 12,
+     "prob": 54,
+     "mm": 0.3,
+     "rafagas": 31,
+     "nubes": 72
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 11,
+     "prob": 41,
+     "mm": 0.2,
+     "rafagas": 27,
+     "nubes": 59
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 11,
+     "prob": 30,
+     "mm": 0.0,
+     "rafagas": 22,
+     "nubes": 44
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 11,
+     "prob": 22,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 42
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 10,
+     "prob": 17,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 36
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 10,
+     "prob": 12,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 38
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 10,
+     "prob": 8,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 39
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 9,
+     "prob": 6,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 37
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 9,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 6,
+     "nubes": 42
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 9,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 39
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 9,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 20
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 8,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 23
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 9,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 29
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 11,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 33
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 13,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 34
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 14,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 34
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 15,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 21,
+     "nubes": 33
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 16,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 23,
+     "nubes": 32
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 25,
+     "nubes": 30
+    }
+   ],
+   "alertas_smn": [
+    {
+     "tipo": "alerta",
+     "mensaje": "Update",
+     "evento": "Lluvias",
+     "titulo": "Lluvias",
+     "descripcion": "El área será afectada por lluvias persistentes. Se prevén valores de precipitación acumulada entre 20 y 40 mm, que pueden ser superados de forma puntual. No se descarta la posibilidad de tormentas embebidas. En las regiones de mayor elevación, la precipitación puede darse en forma de nieve.",
+     "instrucciones": "1- Evitá salir. 2- No saques la basura. 3- Limpiá desagües y sumideros. 4- Alejate de zonas inundables. 5- Cortá el suministro eléctrico si ingresa agua.",
+     "color": "amarilla",
+     "desde": "2026-10-24T09:22:49-03:00",
+     "hasta": "2026-10-25T02:59:59-03:00",
+     "link": "https://www.smn.gob.ar/alertas"
+    }
+   ],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "tucuman",
+   "nombre": "Tucumán",
+   "aeropuertos": [
+    "SANT"
+   ],
+   "ahora": {
+    "aeropuerto": "SANT",
+    "nombre": "Tucumán",
+    "hora": "2026-10-24T15:00",
+    "temp": 15,
+    "punto_rocio": 15,
+    "viento": 9,
+    "rafagas": null,
+    "tiempo": "llovizna y neblina débil",
+    "llueve": true,
+    "crudo": "METAR SANT 241800Z 18005KT 2000 -DZ BR BKN004 OVC012 15/15 Q1016"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 20,
+     "min": 15,
+     "viento": 19,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 9.2,
+     "franjas_lluvia": [
+      "madrugada",
+      "manana",
+      "tarde"
+     ],
+     "rafagas": 25,
+     "nubes": 95,
+     "cape": 195,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 19,
+       "min": 16,
+       "mm": 9.2,
+       "rafagas": 28
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 7.0,
+       "rafagas": 23
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 16,
+       "mm": 1.7,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 16,
+       "mm": 13.5,
+       "rafagas": 21
+      },
+      "meteofrance_seamless": {
+       "max": 20,
+       "min": 17,
+       "mm": 9.9,
+       "rafagas": 21
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 16,
+       "mm": 22.2,
+       "rafagas": 32
+      },
+      "jma_seamless": {
+       "max": 24,
+       "min": 18,
+       "mm": 0.8,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 86,
+      "modelos_con_lluvia": 6,
+      "modelos_total": 7,
+      "mm": 1.4,
+      "franjas_lluvia": [
+       "tarde"
+      ],
+      "rafagas": 24,
+      "nubes": 92,
+      "cape": 145,
+      "cielo": "lluvia",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "A la tarde se larga. Organizate para no quedar como sopa en la parada.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 19,
+     "min": 13,
+     "viento": 16,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 3.7,
+     "franjas_lluvia": [
+      "madrugada",
+      "manana"
+     ],
+     "rafagas": 22,
+     "nubes": 83,
+     "cape": 75,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 14,
+       "mm": 3.1,
+       "rafagas": 20
+      },
+      "gfs_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 10.1,
+       "rafagas": 20
+      },
+      "icon_seamless": {
+       "max": 17,
+       "min": 13,
+       "mm": 3.7,
+       "rafagas": 32
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 7.7,
+       "rafagas": 17
+      },
+      "meteofrance_seamless": {
+       "max": 17,
+       "min": 15,
+       "mm": 2.5,
+       "rafagas": 16
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 14,
+       "mm": 6.9,
+       "rafagas": 24
+      },
+      "jma_seamless": {
+       "max": 21,
+       "min": 15,
+       "mm": 2.8,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Se viene agua de madrugada y a la mañana. Llevá paraguas aunque al salir parezca que no.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 23,
+     "min": 11,
+     "viento": 19,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 69,
+     "cape": 75,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 23,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "gfs_seamless": {
+       "max": 26,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 20
+      },
+      "icon_seamless": {
+       "max": 21,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 11,
+       "mm": 0.3,
+       "rafagas": 16
+      },
+      "meteofrance_seamless": {
+       "max": 23,
+       "min": 12,
+       "mm": 0.2,
+       "rafagas": 26
+      },
+      "ukmo_seamless": {
+       "max": 24,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 15,
+       "mm": -0.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Sin lluvia y con 23 de máxima. Vestite como quieras, el lunes el clima no se mete.",
+      "situacion": "templado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 23,
+     "min": 14,
+     "viento": 17,
+     "prob_lluvia": 57,
+     "modelos_con_lluvia": 4,
+     "modelos_total": 7,
+     "mm": 1.2,
+     "franjas_lluvia": [
+      "noche"
+     ],
+     "rafagas": 22,
+     "nubes": 59,
+     "cape": 195,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 21,
+       "min": 15,
+       "mm": 6.0,
+       "rafagas": 27
+      },
+      "gfs_seamless": {
+       "max": 26,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 14
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 16,
+       "mm": 1.2,
+       "rafagas": 23
+      },
+      "gem_seamless": {
+       "max": 21,
+       "min": 15,
+       "mm": 1.5,
+       "rafagas": 13
+      },
+      "meteofrance_seamless": {
+       "max": 23,
+       "min": 15,
+       "mm": 0.1,
+       "rafagas": 28
+      },
+      "ukmo_seamless": {
+       "max": 25,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 24,
+       "min": 17,
+       "mm": 3.4,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Llueve a la noche. Si colgaste ropa, ya sabés lo que tenés que hacer.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 17,
+     "prob": 74,
+     "mm": 0.4,
+     "rafagas": 23,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 17,
+     "prob": 70,
+     "mm": 0.6,
+     "rafagas": 22,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 17,
+     "prob": 63,
+     "mm": 0.3,
+     "rafagas": 20,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 16,
+     "prob": 52,
+     "mm": 0.3,
+     "rafagas": 18,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 16,
+     "prob": 44,
+     "mm": 0.1,
+     "rafagas": 14,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 16,
+     "prob": 40,
+     "mm": 0.1,
+     "rafagas": 8,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 16,
+     "prob": 25,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 16,
+     "prob": 22,
+     "mm": 0.1,
+     "rafagas": 9,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 16,
+     "prob": 27,
+     "mm": 0.1,
+     "rafagas": 9,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 16,
+     "prob": 27,
+     "mm": 0.1,
+     "rafagas": 9,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 16,
+     "prob": 23,
+     "mm": 0.1,
+     "rafagas": 9,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 15,
+     "prob": 24,
+     "mm": 0.1,
+     "rafagas": 9,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 15,
+     "prob": 33,
+     "mm": 0.1,
+     "rafagas": 11,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 15,
+     "prob": 50,
+     "mm": 0.5,
+     "rafagas": 13,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 15,
+     "prob": 61,
+     "mm": 0.5,
+     "rafagas": 15,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 14,
+     "prob": 70,
+     "mm": 0.6,
+     "rafagas": 16,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 14,
+     "prob": 74,
+     "mm": 0.9,
+     "rafagas": 14,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 14,
+     "prob": 71,
+     "mm": 0.7,
+     "rafagas": 13,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 14,
+     "prob": 69,
+     "mm": 0.6,
+     "rafagas": 13,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 14,
+     "prob": 62,
+     "mm": 0.4,
+     "rafagas": 14,
+     "nubes": 96
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 14,
+     "prob": 49,
+     "mm": 0.2,
+     "rafagas": 12,
+     "nubes": 91
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 15,
+     "prob": 39,
+     "mm": 0.2,
+     "rafagas": 13,
+     "nubes": 86
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 16,
+     "prob": 29,
+     "mm": 0.1,
+     "rafagas": 12,
+     "nubes": 86
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 17,
+     "prob": 22,
+     "mm": 0.1,
+     "rafagas": 11,
+     "nubes": 81
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  },
+  {
+   "id": "mar-del-plata",
+   "nombre": "Mar del Plata",
+   "aeropuertos": [
+    "SAZM"
+   ],
+   "ahora": {
+    "aeropuerto": "SAZM",
+    "nombre": "Mar del Plata",
+    "hora": "2026-10-24T15:00",
+    "temp": 14,
+    "punto_rocio": 14,
+    "viento": 26,
+    "rafagas": null,
+    "tiempo": "cubierto",
+    "llueve": false,
+    "crudo": "METAR SAZM 241800Z 18014KT 160V220 9999 BKN020 OVC100 14/14 Q1018"
+   },
+   "dias": [
+    {
+     "fecha": "2026-10-24",
+     "dia_semana": "sábado",
+     "max": 14,
+     "min": 9,
+     "viento": 30,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 1.2,
+     "franjas_lluvia": [],
+     "rafagas": 45,
+     "nubes": 87,
+     "cape": 35,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 14,
+       "min": 10,
+       "mm": 1.2,
+       "rafagas": 53
+      },
+      "gfs_seamless": {
+       "max": 14,
+       "min": 9,
+       "mm": 0.6,
+       "rafagas": 46
+      },
+      "icon_seamless": {
+       "max": 12,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 46
+      },
+      "gem_seamless": {
+       "max": 13,
+       "min": 10,
+       "mm": 2.0,
+       "rafagas": 39
+      },
+      "meteofrance_seamless": {
+       "max": 12,
+       "min": 11,
+       "mm": 0.8,
+       "rafagas": 40
+      },
+      "ukmo_seamless": {
+       "max": 12,
+       "min": 10,
+       "mm": 1.6,
+       "rafagas": 46
+      },
+      "jma_seamless": {
+       "max": 12,
+       "min": 10,
+       "mm": 2.4,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 57,
+      "modelos_con_lluvia": 4,
+      "modelos_total": 7,
+      "mm": 0.5,
+      "franjas_lluvia": [],
+      "rafagas": 40,
+      "nubes": 93,
+      "cape": 30,
+      "cielo": "lluvia",
+      "desde": "15:00"
+     },
+     "frase": {
+      "texto": "Los modelos no se ponen de acuerdo. Nosotros tampoco. Llevá el paraguas por las dudas.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-25",
+     "dia_semana": "domingo",
+     "max": 13,
+     "min": 8,
+     "viento": 25,
+     "prob_lluvia": 71,
+     "modelos_con_lluvia": 5,
+     "modelos_total": 7,
+     "mm": 0.6,
+     "franjas_lluvia": [],
+     "rafagas": 38,
+     "nubes": 84,
+     "cape": 30,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 11,
+       "min": 9,
+       "mm": 1.7,
+       "rafagas": 48
+      },
+      "gfs_seamless": {
+       "max": 11,
+       "min": 8,
+       "mm": 0.5,
+       "rafagas": 30
+      },
+      "icon_seamless": {
+       "max": 12,
+       "min": 8,
+       "mm": 0.7,
+       "rafagas": 36
+      },
+      "gem_seamless": {
+       "max": 10,
+       "min": 9,
+       "mm": 0.4,
+       "rafagas": 31
+      },
+      "meteofrance_seamless": {
+       "max": 11,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "ukmo_seamless": {
+       "max": 10,
+       "min": 9,
+       "mm": 0.7,
+       "rafagas": 45
+      },
+      "jma_seamless": {
+       "max": 11,
+       "min": 9,
+       "mm": 0.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día dudoso: puede llover, puede que no. Un paraguas chiquito no le hace mal a nadie.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-26",
+     "dia_semana": "lunes",
+     "max": 14,
+     "min": 7,
+     "viento": 17,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 24,
+     "nubes": 68,
+     "cape": 20,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 12,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "gfs_seamless": {
+       "max": 14,
+       "min": 6,
+       "mm": 0.1,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 13,
+       "min": 8,
+       "mm": 0.3,
+       "rafagas": 23
+      },
+      "gem_seamless": {
+       "max": 12,
+       "min": 7,
+       "mm": 0.0,
+       "rafagas": 18
+      },
+      "meteofrance_seamless": {
+       "max": 12,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "ukmo_seamless": {
+       "max": 12,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 12,
+       "min": 10,
+       "mm": 0.4,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Mañana fresquita de 7. Vestite en capas, como cebolla: te sacás a medida que sube.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-10-27",
+     "dia_semana": "martes",
+     "max": 17,
+     "min": 8,
+     "viento": 23,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 33,
+     "nubes": 85,
+     "cape": 30,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 14,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "gfs_seamless": {
+       "max": 16,
+       "min": 7,
+       "mm": 0.4,
+       "rafagas": 34
+      },
+      "icon_seamless": {
+       "max": 16,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "gem_seamless": {
+       "max": 16,
+       "min": 5,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "meteofrance_seamless": {
+       "max": 14,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "ukmo_seamless": {
+       "max": 13,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 8 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-10-24T15:00",
+     "temp": 13,
+     "prob": 12,
+     "mm": 0.0,
+     "rafagas": 37,
+     "nubes": 84
+    },
+    {
+     "hora": "2026-10-24T16:00",
+     "temp": 13,
+     "prob": 13,
+     "mm": 0.0,
+     "rafagas": 39,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-24T17:00",
+     "temp": 12,
+     "prob": 19,
+     "mm": 0.0,
+     "rafagas": 39,
+     "nubes": 99
+    },
+    {
+     "hora": "2026-10-24T18:00",
+     "temp": 12,
+     "prob": 20,
+     "mm": 0.0,
+     "rafagas": 38,
+     "nubes": 99
+    },
+    {
+     "hora": "2026-10-24T19:00",
+     "temp": 11,
+     "prob": 18,
+     "mm": 0.1,
+     "rafagas": 37,
+     "nubes": 98
+    },
+    {
+     "hora": "2026-10-24T20:00",
+     "temp": 11,
+     "prob": 19,
+     "mm": 0.1,
+     "rafagas": 37,
+     "nubes": 98
+    },
+    {
+     "hora": "2026-10-24T21:00",
+     "temp": 11,
+     "prob": 16,
+     "mm": 0.0,
+     "rafagas": 38,
+     "nubes": 98
+    },
+    {
+     "hora": "2026-10-24T22:00",
+     "temp": 11,
+     "prob": 11,
+     "mm": 0.0,
+     "rafagas": 37,
+     "nubes": 98
+    },
+    {
+     "hora": "2026-10-24T23:00",
+     "temp": 10,
+     "prob": 7,
+     "mm": 0.0,
+     "rafagas": 37,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-25T00:00",
+     "temp": 10,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 36,
+     "nubes": 75
+    },
+    {
+     "hora": "2026-10-25T01:00",
+     "temp": 10,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 34,
+     "nubes": 63
+    },
+    {
+     "hora": "2026-10-25T02:00",
+     "temp": 10,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 75
+    },
+    {
+     "hora": "2026-10-25T03:00",
+     "temp": 10,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 84
+    },
+    {
+     "hora": "2026-10-25T04:00",
+     "temp": 9,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 90
+    },
+    {
+     "hora": "2026-10-25T05:00",
+     "temp": 9,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 92
+    },
+    {
+     "hora": "2026-10-25T06:00",
+     "temp": 9,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 97
+    },
+    {
+     "hora": "2026-10-25T07:00",
+     "temp": 10,
+     "prob": 2,
+     "mm": 0.1,
+     "rafagas": 32,
+     "nubes": 95
+    },
+    {
+     "hora": "2026-10-25T08:00",
+     "temp": 10,
+     "prob": 4,
+     "mm": 0.0,
+     "rafagas": 34,
+     "nubes": 94
+    },
+    {
+     "hora": "2026-10-25T09:00",
+     "temp": 10,
+     "prob": 5,
+     "mm": 0.0,
+     "rafagas": 34,
+     "nubes": 93
+    },
+    {
+     "hora": "2026-10-25T10:00",
+     "temp": 11,
+     "prob": 10,
+     "mm": 0.1,
+     "rafagas": 34,
+     "nubes": 87
+    },
+    {
+     "hora": "2026-10-25T11:00",
+     "temp": 11,
+     "prob": 14,
+     "mm": 0.1,
+     "rafagas": 33,
+     "nubes": 82
+    },
+    {
+     "hora": "2026-10-25T12:00",
+     "temp": 11,
+     "prob": 17,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 79
+    },
+    {
+     "hora": "2026-10-25T13:00",
+     "temp": 11,
+     "prob": 17,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 81
+    },
+    {
+     "hora": "2026-10-25T14:00",
+     "temp": 11,
+     "prob": 16,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 82
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-10-24T15:14"
+  }
+ ]
+}
