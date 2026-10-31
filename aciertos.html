@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Cuánto acertamos? — Che, Clima</title>
+  <meta name="description" content="Cada día comparamos nuestro pronóstico con lo que pasó de verdad, y contra cada modelo meteorológico. También los días que perdemos.">
+  <meta name="theme-color" content="#1f5fbf">
+  <link rel="icon" type="image/png" href="icono-64.png">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <link rel="stylesheet" href="estilos.css?v=1c">
+</head>
+<body>
+  <header class="cabecera">
+    <nav class="menu" aria-label="Secciones">
+      <a href="./">Pronóstico</a>
+      <a href="radar.html">Radar</a>
+      <a href="tormentas.html">Tormentas</a>
+      <a href="aciertos.html" aria-current="page">¿Cuánto acertamos?</a>
+    </nav>
+    <div class="marca">
+      <span class="marca-icono" aria-hidden="true">🎯</span>
+      <div>
+        <h1>¿Cuánto acertamos?</h1>
+        <p class="lema">Lo que dijimos el día anterior, contra lo que pasó. También los días que perdemos.</p>
+      </div>
+    </div>
+    <nav class="ciudades" id="ciudades" aria-label="Elegir zona"></nav>
+    <div class="periodos" role="group" aria-label="Período">
+      <button type="button" data-dias="7" aria-pressed="false">Últimos 7 días</button>
+      <button type="button" data-dias="30" aria-pressed="true">Últimos 30 días</button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <p class="cargando">Cargando los aciertos…</p>
+  </main>
+
+  <footer class="pie">
+    <section class="tarjeta como">
+      <h2>Cómo lo medimos</h2>
+      <ul>
+        <li><strong>Qué comparamos:</strong> lo que cada modelo, y nosotros, pronosticábamos para cada día <em>el día anterior</em>.</li>
+        <li><strong>Contra qué:</strong> las máximas y mínimas oficiales del SMN, y si llovió y cuánto viento hubo según los reportes METAR del aeropuerto de cada ciudad.</li>
+        <li><strong>Lluvia:</strong> contamos un día como lluvioso si el aeropuerto reportó lluvia al menos dos veces (la llovizna muy débil no cuenta).</li>
+        <li><strong>Nuestro pronóstico:</strong> a cada modelo le restamos su error típico en esa ciudad y pesa más el que menos se equivocó, siempre con datos de días <em>anteriores</em>. Nunca miramos el resultado del día que medimos.</li>
+        <li><strong>Días reconstruidos:</strong> los anteriores al 24/10 los calculamos después, con el mismo método. Desde el 24/10 el pronóstico ya estaba publicado antes de que pasara.</li>
+      </ul>
+    </section>
+    <p class="aviso-legal"><strong>Información complementaria.</strong> Ante emergencias, seguí las alertas oficiales del
+      <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">SMN</a> y de Defensa Civil.</p>
+    <p id="actualizado" class="actualizado"></p>
+    <p class="actualizado"><a href="soporte.html">Ayuda</a> · <a href="privacidad.html">Privacidad</a> · <a href="mailto:hola@checlima.com.ar">hola@checlima.com.ar</a></p>
+    <p class="fuentes">
+      Observado: máximas y mínimas del <a href="https://www.smn.gob.ar/" target="_blank" rel="noopener">Servicio Meteorológico Nacional</a> (datos abiertos, CC BY 4.0);
+      METAR del archivo de la <a href="https://mesonet.agron.iastate.edu/" target="_blank" rel="noopener">Universidad Estatal de Iowa</a>.
+      Pronósticos: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0). Proyecto sin fines de lucro.
+    </p>
+  </footer>
+
+  <script src="aciertos.js?v=smn1"></script>
+</body>
+</html>

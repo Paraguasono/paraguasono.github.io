@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tormentas — Che, Clima</title>
+  <meta name="description" content="Imagen satelital en vivo, alertas oficiales del SMN y vigilancia de tormentas para las próximas 6 horas en las principales ciudades de Argentina.">
+  <meta name="theme-color" content="#1f5fbf">
+  <link rel="icon" type="image/png" href="icono-64.png">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <link rel="stylesheet" href="estilos.css?v=1c">
+</head>
+<body>
+  <header class="cabecera">
+    <nav class="menu" aria-label="Secciones">
+      <a href="./">Pronóstico</a>
+      <a href="radar.html">Radar</a>
+      <a href="tormentas.html" aria-current="page">Tormentas</a>
+      <a href="aciertos.html">¿Cuánto acertamos?</a>
+    </nav>
+    <div class="marca">
+      <span class="marca-icono" aria-hidden="true">⛈️</span>
+      <div>
+        <h1>Tormentas</h1>
+        <p class="lema">Satélite en vivo, alertas oficiales y nuestra vigilancia de las próximas 6 horas.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="tarjeta" id="estado-ciudades">
+      <h2>Ahora, ciudad por ciudad</h2>
+      <p class="cargando">Cargando…</p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Satélite GOES-19 · sur de Sudamérica</h2>
+      <a id="satelite-grande" href="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/SECTOR/ssa/GEOCOLOR/1800x1080.jpg" target="_blank" rel="noopener">
+        <img id="satelite" class="satelite" width="900" height="540" alt="Imagen satelital GOES-19 del sur de Sudamérica, con la Argentina en el centro"
+             src="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/SECTOR/ssa/GEOCOLOR/900x540.jpg">
+      </a>
+      <p class="explicacion">De día, color real; de noche, las nubes en celeste y las luces de las ciudades.
+        Las tormentas fuertes se ven como manchas blancas, compactas y de bordes marcados.
+        Tocá la imagen para verla más grande. Se actualiza cada 10 minutos.</p>
+      <p><button type="button" class="boton" id="ver-animacion">Ver la animación de las últimas horas (3,5 MB)</button></p>
+      <div id="animacion"></div>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Rayos detectados por el satélite</h2>
+      <a href="https://cdn.star.nesdis.noaa.gov/GOES19/GLM/SECTOR/ssa/EXTENT3/1800x1080.jpg" target="_blank" rel="noopener">
+        <img id="rayos" class="satelite" width="900" height="540" alt="Actividad eléctrica detectada por el sensor GLM del satélite GOES-19"
+             src="https://cdn.star.nesdis.noaa.gov/GOES19/GLM/SECTOR/ssa/EXTENT3/900x540.jpg">
+      </a>
+      <p class="explicacion">Los colores muestran dónde el sensor de rayos del satélite (GLM) detectó actividad eléctrica en los últimos minutos.
+        Donde hay rayos, hay tormenta.</p>
+    </section>
+
+    <section class="tarjeta como">
+      <h2>Cómo vigilamos</h2>
+      <ul>
+        <li><strong>Primero, lo oficial:</strong> si el SMN emitió una alerta o un aviso para tu ciudad, lo mostramos arriba de todo, con su link.</li>
+        <li><strong>Además, nuestra vigilancia:</strong> miramos las próximas 6 horas en los 7 modelos. Avisamos si al menos 2 ven tormenta en la misma hora
+          (marcan tormenta, o tienen mucha energía para tormentas y lluvia a la vez).</li>
+        <li><strong>Y de respaldo, los aeropuertos:</strong> si un aeropuerto reporta tormenta en ese momento, avisamos aunque los modelos no la hayan visto
+          (si reporta granizo, como tormenta fuerte).</li>
+        <li><strong>Tormenta fuerte:</strong> si además dan granizo, ráfagas de 70 km/h o más, o lluvia muy intensa en poco tiempo.</li>
+        <li>Cuando hay alerta, el pronóstico se pone serio: sin chistes.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="aviso-legal"><strong>Información complementaria.</strong> Ante emergencias, seguí las alertas oficiales del
+      <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">SMN</a> y de Defensa Civil.</p>
+    <p id="actualizado" class="actualizado"></p>
+    <p class="actualizado"><a href="soporte.html">Ayuda</a> · <a href="privacidad.html">Privacidad</a> · <a href="mailto:hola@checlima.com.ar">hola@checlima.com.ar</a></p>
+    <p class="fuentes">
+      Imágenes: GOES-19, <a href="https://www.star.nesdis.noaa.gov/goes/" target="_blank" rel="noopener">NOAA/NESDIS/STAR</a> (dominio público).
+      Alertas: <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">Servicio Meteorológico Nacional</a> (CC BY 4.0).
+      Modelos: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0). Proyecto sin fines de lucro.
+    </p>
+  </footer>
+
+  <script src="tormentas.js?v=tormenta3"></script>
+</body>
+</html>
