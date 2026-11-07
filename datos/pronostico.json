@@ -1,0 +1,6579 @@
+{
+ "actualizado": "2026-11-07T16:17",
+ "modelos": [
+  {
+   "id": "ecmwf_ifs",
+   "nombre": "ECMWF (Europa)"
+  },
+  {
+   "id": "gfs_seamless",
+   "nombre": "GFS (EE.UU.)"
+  },
+  {
+   "id": "icon_seamless",
+   "nombre": "ICON (Alemania)"
+  },
+  {
+   "id": "gem_seamless",
+   "nombre": "GEM (Canadá)"
+  },
+  {
+   "id": "meteofrance_seamless",
+   "nombre": "Météo-France"
+  },
+  {
+   "id": "ukmo_seamless",
+   "nombre": "UKMO (Reino Unido)"
+  },
+  {
+   "id": "jma_seamless",
+   "nombre": "JMA (Japón)"
+  }
+ ],
+ "metodo": "Máxima, mínima y viento: a cada modelo le restamos su error típico en esta ciudad (últimos 30 días) y pesa más el que menos se equivocó. Lluvia: porcentaje de modelos que dan al menos 0.5 mm en el día. La tabla muestra lo que dice cada modelo sin corregir.",
+ "ciudades": [
+  {
+   "id": "caba",
+   "nombre": "CABA",
+   "lat": -34.6037,
+   "lon": -58.3816,
+   "aeropuertos": [
+    "SABE"
+   ],
+   "ahora": {
+    "aeropuerto": "SABE",
+    "nombre": "Aeroparque",
+    "hora": "2026-11-07T16:00",
+    "temp": 17,
+    "punto_rocio": 5,
+    "viento": 15,
+    "rafagas": null,
+    "tiempo": "mayormente nublado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SABE 071900Z 16008KT 120V220 9999 BKN046 17/05 Q1023 NOSIG"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 19,
+     "min": 12,
+     "viento": 31,
+     "st_max": 16,
+     "st_min": 9,
+     "uv": 7,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 1.3,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 47,
+     "nubes": 48,
+     "cape": 50,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 19,
+       "min": 12,
+       "mm": 2.2,
+       "rafagas": 53
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.9,
+       "rafagas": 44
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 1.1,
+       "rafagas": 45
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 14,
+       "mm": 1.3,
+       "rafagas": 46
+      },
+      "meteofrance_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 1.9,
+       "rafagas": 51
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 1.2,
+       "rafagas": 43
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 2.8,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 34,
+      "nubes": 33,
+      "cape": 30,
+      "cielo": "sol",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "La lluvia ya pasó. Si te mojaste temprano, a la tarde te secás. Máxima de 19° y mínima de 12°, bastante agradable.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 20,
+     "min": 11,
+     "viento": 19,
+     "st_max": 20,
+     "st_min": 10,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 26,
+     "nubes": 7,
+     "cape": 10,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 20,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "gfs_seamless": {
+       "max": 19,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "icon_seamless": {
+       "max": 21,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 17
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "ukmo_seamless": {
+       "max": 21,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "jma_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Mañana no llueve. En serio. Dejá el paraguas, que lo vas a olvidar en el colectivo. Ni frío ni calor: de 11° a 20°. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 24,
+     "min": 15,
+     "viento": 24,
+     "st_max": 22,
+     "st_min": 13,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 35,
+     "nubes": 0,
+     "cape": 10,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 23,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 44
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "gem_seamless": {
+       "max": 23,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "meteofrance_seamless": {
+       "max": 23,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "ukmo_seamless": {
+       "max": 24,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "jma_seamless": {
+       "max": 23,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Ni frío ni calor, 24 grados. Día de esos que no hay que desperdiciar. Máxima de 24° y mínima de 15°, bastante agradable. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 26,
+     "min": 17,
+     "viento": 26,
+     "st_max": 26,
+     "st_min": 16,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 39,
+     "nubes": 67,
+     "cape": 20,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 25,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 42
+      },
+      "gfs_seamless": {
+       "max": 24,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "icon_seamless": {
+       "max": 25,
+       "min": 17,
+       "mm": 0.2,
+       "rafagas": 35
+      },
+      "gem_seamless": {
+       "max": 25,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "meteofrance_seamless": {
+       "max": 25,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "ukmo_seamless": {
+       "max": 27,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "jma_seamless": {
+       "max": 25,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día tranqui: 17 a la mañana, 26 a la tarde y nada de agua. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "templado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 27,
+     "min": 19,
+     "viento": 20,
+     "st_max": 27,
+     "st_min": 20,
+     "uv": 8,
+     "prob_lluvia": 43,
+     "modelos_con_lluvia": 3,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 30,
+     "nubes": 47,
+     "cape": 205,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 27,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "gfs_seamless": {
+       "max": 24,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "icon_seamless": {
+       "max": 26,
+       "min": 19,
+       "mm": 3.1,
+       "rafagas": 35
+      },
+      "gem_seamless": {
+       "max": 23,
+       "min": 17,
+       "mm": 2.4,
+       "rafagas": 19
+      },
+      "meteofrance_seamless": {
+       "max": 24,
+       "min": 18,
+       "mm": 4.8,
+       "rafagas": 26
+      },
+      "ukmo_seamless": {
+       "max": 27,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día dudoso: puede llover, puede que no. Un paraguas chiquito no le hace mal a nadie. La temperatura acompaña: 27° de máxima. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 30,
+     "min": 20,
+     "viento": 24,
+     "st_max": 30,
+     "st_min": 21,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 34,
+     "nubes": 23,
+     "cape": 90,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 30,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 43
+      },
+      "gfs_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "icon_seamless": {
+       "max": 32,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "gem_seamless": {
+       "max": 26,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 31,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "jma_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "30 grados, calorcito rico. Si podés, almorzá al aire libre. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 27,
+     "min": 21,
+     "viento": 27,
+     "st_max": 27,
+     "st_min": 21,
+     "uv": 8,
+     "prob_lluvia": 17,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 38,
+     "nubes": 60,
+     "cape": 90,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 28,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 42
+      },
+      "gfs_seamless": {
+       "max": 24,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 45
+      },
+      "icon_seamless": {
+       "max": 29,
+       "min": 22,
+       "mm": 3.8,
+       "rafagas": 28
+      },
+      "gem_seamless": {
+       "max": 29,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 43
+      },
+      "jma_seamless": {
+       "max": 21,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Linda máxima de 27. Remera y a disfrutar. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 34,
+     "nubes": 51,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 34,
+     "nubes": 28,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 19,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 29,
+     "nubes": 13,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 23,
+     "nubes": 22,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 9,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 10,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 18,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 3,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 2,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 2,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 1,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 1,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 1,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 1,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 1,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 0,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 1,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 8,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 8,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 9,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 8,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 9,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 9,
+     "st": 19
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "gba-norte",
+   "nombre": "GBA Norte",
+   "lat": -34.4708,
+   "lon": -58.5286,
+   "aeropuertos": [
+    "SADF"
+   ],
+   "ahora": {
+    "aeropuerto": "SADF",
+    "nombre": "San Fernando",
+    "hora": "2026-11-07T16:00",
+    "temp": 18,
+    "punto_rocio": 7,
+    "viento": 19,
+    "rafagas": null,
+    "tiempo": "mayormente nublado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SADF 071900Z 19010KT 150V230 9999 BKN048 18/07 Q1023"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 19,
+     "min": 12,
+     "viento": 29,
+     "st_max": 16,
+     "st_min": 9,
+     "uv": 8,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 1.9,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 47,
+     "nubes": 47,
+     "cape": 60,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 12,
+       "mm": 2.3,
+       "rafagas": 52
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 0.5,
+       "rafagas": 44
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 3.2,
+       "rafagas": 49
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 1.0,
+       "rafagas": 44
+      },
+      "meteofrance_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 1.9,
+       "rafagas": 51
+      },
+      "ukmo_seamless": {
+       "max": 20,
+       "min": 12,
+       "mm": 1.2,
+       "rafagas": 45
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 2.8,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 33,
+      "nubes": 32,
+      "cape": 25,
+      "cielo": "sol",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "Ya llovió lo que tenía que llover. Lo que queda del día viene seco. Máxima de 19° y mínima de 12°, bastante agradable. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 21,
+     "min": 10,
+     "viento": 19,
+     "st_max": 21,
+     "st_min": 10,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 6,
+     "cape": 5,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 19,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "gfs_seamless": {
+       "max": 23,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "gem_seamless": {
+       "max": 22,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 16
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "ukmo_seamless": {
+       "max": 21,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "jma_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Ni frío ni calor, 21 grados. Día de esos que no hay que desperdiciar. Temperatura amable: entre 10° y 21°. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 24,
+     "min": 12,
+     "viento": 22,
+     "st_max": 23,
+     "st_min": 12,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 34,
+     "nubes": 0,
+     "cape": 5,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 23,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "gfs_seamless": {
+       "max": 25,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "icon_seamless": {
+       "max": 23,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "meteofrance_seamless": {
+       "max": 23,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "ukmo_seamless": {
+       "max": 25,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "jma_seamless": {
+       "max": 23,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Sin lluvia y con sol. El lunes el clima no tiene excusa para arruinarte nada. Ojo con el cambio: 12° temprano y 24° a la tarde. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 27,
+     "min": 16,
+     "viento": 22,
+     "st_max": 26,
+     "st_min": 15,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 36,
+     "nubes": 67,
+     "cape": 100,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 25,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "gfs_seamless": {
+       "max": 27,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 44
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "gem_seamless": {
+       "max": 27,
+       "min": 17,
+       "mm": 0.1,
+       "rafagas": 34
+      },
+      "meteofrance_seamless": {
+       "max": 25,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "jma_seamless": {
+       "max": 25,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Linda máxima de 27. Remera y a disfrutar. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 27,
+     "min": 18,
+     "viento": 17,
+     "st_max": 27,
+     "st_min": 20,
+     "uv": 8,
+     "prob_lluvia": 43,
+     "modelos_con_lluvia": 3,
+     "modelos_total": 7,
+     "mm": 0.3,
+     "franjas_lluvia": [],
+     "rafagas": 28,
+     "nubes": 53,
+     "cape": 320,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.3,
+       "rafagas": 34
+      },
+      "gfs_seamless": {
+       "max": 29,
+       "min": 19,
+       "mm": 0.2,
+       "rafagas": 26
+      },
+      "icon_seamless": {
+       "max": 25,
+       "min": 19,
+       "mm": 2.1,
+       "rafagas": 31
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 17,
+       "mm": 5.4,
+       "rafagas": 23
+      },
+      "meteofrance_seamless": {
+       "max": 24,
+       "min": 18,
+       "mm": 4.8,
+       "rafagas": 26
+      },
+      "ukmo_seamless": {
+       "max": 26,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Los modelos no se ponen de acuerdo. Nosotros tampoco. Llevá el paraguas por las dudas. La temperatura acompaña: 27° de máxima. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 29,
+     "min": 18,
+     "viento": 24,
+     "st_max": 31,
+     "st_min": 20,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 34,
+     "nubes": 19,
+     "cape": 570,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 28,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 42
+      },
+      "gfs_seamless": {
+       "max": 30,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "icon_seamless": {
+       "max": 28,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "gem_seamless": {
+       "max": 29,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 31,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "jma_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "29 grados, calorcito rico. Si podés, almorzá al aire libre. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 27,
+     "min": 20,
+     "viento": 25,
+     "st_max": 28,
+     "st_min": 20,
+     "uv": 8,
+     "prob_lluvia": 17,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 38,
+     "nubes": 60,
+     "cape": 160,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 26,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "gfs_seamless": {
+       "max": 28,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 43
+      },
+      "icon_seamless": {
+       "max": 26,
+       "min": 23,
+       "mm": 2.6,
+       "rafagas": 40
+      },
+      "gem_seamless": {
+       "max": 32,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "jma_seamless": {
+       "max": 21,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "27 grados, calorcito rico. Si podés, almorzá al aire libre. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 18,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 38,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 36,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 21,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 23,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 23,
+     "nubes": 14,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 10,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 4,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 5,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 7,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 3,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 2,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 1,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 4,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 4,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 9,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 8,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 6,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 4,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 6,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 7,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 8,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 11,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 10,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 7,
+     "st": 20
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "gba-sur-oeste",
+   "nombre": "GBA Sur y Oeste",
+   "lat": -34.72,
+   "lon": -58.55,
+   "aeropuertos": [
+    "SAEZ",
+    "SADP"
+   ],
+   "ahora": {
+    "aeropuerto": "SAEZ",
+    "nombre": "Ezeiza",
+    "hora": "2026-11-07T16:00",
+    "temp": 17,
+    "punto_rocio": 7,
+    "viento": 17,
+    "rafagas": null,
+    "tiempo": "parcialmente nublado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SAEZ 071900Z 17009KT 140V220 9999 FEW040 SCT050 17/07 Q1023 NOSIG"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 18,
+     "min": 11,
+     "viento": 27,
+     "st_max": 16,
+     "st_min": 9,
+     "uv": 6,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 1.7,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 44,
+     "nubes": 49,
+     "cape": 45,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 17,
+       "min": 11,
+       "mm": 2.7,
+       "rafagas": 44
+      },
+      "gfs_seamless": {
+       "max": 17,
+       "min": 10,
+       "mm": 1.9,
+       "rafagas": 44
+      },
+      "icon_seamless": {
+       "max": 19,
+       "min": 11,
+       "mm": 0.4,
+       "rafagas": 43
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 1.2,
+       "rafagas": 45
+      },
+      "meteofrance_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 1.7,
+       "rafagas": 47
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.7,
+       "rafagas": 41
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 2.8,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 33,
+      "nubes": 31,
+      "cape": 25,
+      "cielo": "sol",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "Lo peor ya pasó. De acá a la noche, seco. Día fresco: no pasa de 18°.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 22,
+     "min": 9,
+     "viento": 16,
+     "st_max": 22,
+     "st_min": 8,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 21,
+     "nubes": 8,
+     "cape": 0,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 22,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 20
+      },
+      "gfs_seamless": {
+       "max": 23,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "icon_seamless": {
+       "max": 21,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 20
+      },
+      "gem_seamless": {
+       "max": 21,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 17
+      },
+      "meteofrance_seamless": {
+       "max": 21,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "ukmo_seamless": {
+       "max": 22,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "jma_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Mañana fresquita de 9. Vestite en capas, como cebolla: te sacás a medida que sube. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 25,
+     "min": 12,
+     "viento": 20,
+     "st_max": 23,
+     "st_min": 12,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 32,
+     "nubes": 0,
+     "cape": 0,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 24,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gfs_seamless": {
+       "max": 24,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "meteofrance_seamless": {
+       "max": 24,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "ukmo_seamless": {
+       "max": 26,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "jma_seamless": {
+       "max": 23,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "El lunes no llueve. En serio. Dejá el paraguas, que lo vas a olvidar en el colectivo. Arranca en 12° y llega a 25°: vestite en capas. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 27,
+     "min": 15,
+     "viento": 21,
+     "st_max": 27,
+     "st_min": 15,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 35,
+     "nubes": 71,
+     "cape": 20,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 27,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "gfs_seamless": {
+       "max": 27,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "gem_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "meteofrance_seamless": {
+       "max": 26,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "jma_seamless": {
+       "max": 25,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Máxima de 27. Día de anteojos de sol y de buscar la sombrita. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 27,
+     "min": 18,
+     "viento": 18,
+     "st_max": 28,
+     "st_min": 20,
+     "uv": 8,
+     "prob_lluvia": 57,
+     "modelos_con_lluvia": 4,
+     "modelos_total": 7,
+     "mm": 1.8,
+     "franjas_lluvia": [],
+     "rafagas": 28,
+     "nubes": 55,
+     "cape": 225,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 28,
+       "min": 19,
+       "mm": 1.8,
+       "rafagas": 28
+      },
+      "gfs_seamless": {
+       "max": 29,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "icon_seamless": {
+       "max": 26,
+       "min": 19,
+       "mm": 1.8,
+       "rafagas": 34
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 17,
+       "mm": 3.6,
+       "rafagas": 20
+      },
+      "meteofrance_seamless": {
+       "max": 25,
+       "min": 18,
+       "mm": 3.3,
+       "rafagas": 27
+      },
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 21,
+       "mm": 0.3,
+       "rafagas": 31
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Los modelos no se ponen de acuerdo. Nosotros tampoco. Llevá el paraguas por las dudas. Llega a 27°: remera tranquilo. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 31,
+     "min": 18,
+     "viento": 21,
+     "st_max": 32,
+     "st_min": 20,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 31,
+     "nubes": 25,
+     "cape": 100,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 30,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "gfs_seamless": {
+       "max": 32,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "icon_seamless": {
+       "max": 32,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "gem_seamless": {
+       "max": 28,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 32,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "jma_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "31 grados, calorcito rico. Si podés, almorzá al aire libre. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 29,
+     "min": 19,
+     "viento": 21,
+     "st_max": 29,
+     "st_min": 20,
+     "uv": 8,
+     "prob_lluvia": 17,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 34,
+     "nubes": 59,
+     "cape": 100,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 30,
+       "min": 21,
+       "mm": 0.2,
+       "rafagas": 34
+      },
+      "gfs_seamless": {
+       "max": 29,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 45
+      },
+      "icon_seamless": {
+       "max": 29,
+       "min": 21,
+       "mm": 5.6,
+       "rafagas": 24
+      },
+      "gem_seamless": {
+       "max": 31,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 29,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "jma_seamless": {
+       "max": 21,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Linda máxima de 29. Remera y a disfrutar. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 37,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 31,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 25,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 10,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 10,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 9,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 7,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 19,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 5,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 2,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 2,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 1,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 1,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 6,
+     "nubes": 1,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 5,
+     "nubes": 1,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 0,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 0,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 0,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 3,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 6,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 7,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 8,
+     "st": 21
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 9,
+     "st": 22
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 11,
+     "st": 21
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "la-plata",
+   "nombre": "La Plata",
+   "lat": -34.9214,
+   "lon": -57.9545,
+   "aeropuertos": [
+    "SADL"
+   ],
+   "ahora": {
+    "aeropuerto": "SADL",
+    "nombre": "La Plata",
+    "hora": "2026-11-07T16:00",
+    "temp": 17,
+    "punto_rocio": 7,
+    "viento": 20,
+    "rafagas": null,
+    "tiempo": "parcialmente nublado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SADL 071900Z 19011KT 9999 SCT030TCU 17/07 Q1024"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 18,
+     "min": 10,
+     "viento": 27,
+     "st_max": 16,
+     "st_min": 9,
+     "uv": 6,
+     "prob_lluvia": 100,
+     "modelos_con_lluvia": 7,
+     "modelos_total": 7,
+     "mm": 2.7,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 46,
+     "nubes": 52,
+     "cape": 75,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 11,
+       "mm": 4.9,
+       "rafagas": 49
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 10,
+       "mm": 5.1,
+       "rafagas": 47
+      },
+      "icon_seamless": {
+       "max": 18,
+       "min": 12,
+       "mm": 0.6,
+       "rafagas": 46
+      },
+      "gem_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 1.7,
+       "rafagas": 48
+      },
+      "meteofrance_seamless": {
+       "max": 18,
+       "min": 11,
+       "mm": 2.7,
+       "rafagas": 45
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 1.8,
+       "rafagas": 43
+      },
+      "jma_seamless": {
+       "max": 17,
+       "min": 14,
+       "mm": 5.6,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 34,
+      "nubes": 43,
+      "cape": 40,
+      "cielo": "parcial",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "Lo peor ya pasó. De acá a la noche, seco. Fresquito, con máxima de 18°: llevá un buzo.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 20,
+     "min": 8,
+     "viento": 16,
+     "st_max": 21,
+     "st_min": 7,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 8,
+     "cape": 10,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 19,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "icon_seamless": {
+       "max": 20,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "gem_seamless": {
+       "max": 20,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "meteofrance_seamless": {
+       "max": 20,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "ukmo_seamless": {
+       "max": 22,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "jma_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 8 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 22,
+     "min": 11,
+     "viento": 20,
+     "st_max": 22,
+     "st_min": 11,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 33,
+     "nubes": 1,
+     "cape": 0,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 21,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "gfs_seamless": {
+       "max": 23,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "icon_seamless": {
+       "max": 23,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "gem_seamless": {
+       "max": 23,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "meteofrance_seamless": {
+       "max": 22,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "ukmo_seamless": {
+       "max": 24,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "jma_seamless": {
+       "max": 22,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Ni frío ni calor, 22 grados. Día de esos que no hay que desperdiciar. Ni frío ni calor: de 11° a 22°. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 25,
+     "min": 15,
+     "viento": 22,
+     "st_max": 25,
+     "st_min": 15,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 37,
+     "nubes": 72,
+     "cape": 40,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 24,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "gfs_seamless": {
+       "max": 25,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "gem_seamless": {
+       "max": 25,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "meteofrance_seamless": {
+       "max": 25,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "ukmo_seamless": {
+       "max": 27,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "jma_seamless": {
+       "max": 24,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Nublado pero sin lluvia. Gris, pero seco: no todo es malo. Máxima de 25° y mínima de 15°, bastante agradable. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 26,
+     "min": 17,
+     "viento": 19,
+     "st_max": 27,
+     "st_min": 20,
+     "uv": 8,
+     "prob_lluvia": 43,
+     "modelos_con_lluvia": 3,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 30,
+     "nubes": 54,
+     "cape": 210,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 26,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "gfs_seamless": {
+       "max": 29,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 19,
+       "mm": 0.6,
+       "rafagas": 32
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 17,
+       "mm": 0.9,
+       "rafagas": 19
+      },
+      "meteofrance_seamless": {
+       "max": 24,
+       "min": 18,
+       "mm": 2.7,
+       "rafagas": 33
+      },
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "jma_seamless": {
+       "max": 28,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día dudoso: puede llover, puede que no. Un paraguas chiquito no le hace mal a nadie. Temperatura amable: entre 17° y 26°. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 29,
+     "min": 17,
+     "viento": 21,
+     "st_max": 31,
+     "st_min": 20,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 32,
+     "nubes": 22,
+     "cape": 270,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 29,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "gfs_seamless": {
+       "max": 30,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "icon_seamless": {
+       "max": 29,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 28,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 31,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "jma_seamless": {
+       "max": 29,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Máxima de 29. Día de anteojos de sol y de buscar la sombrita. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 26,
+     "min": 18,
+     "viento": 21,
+     "st_max": 28,
+     "st_min": 19,
+     "uv": 9,
+     "prob_lluvia": 17,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 37,
+     "nubes": 67,
+     "cape": 100,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 27,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "gfs_seamless": {
+       "max": 28,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 50
+      },
+      "icon_seamless": {
+       "max": 27,
+       "min": 20,
+       "mm": 8.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 30,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 27,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "jma_seamless": {
+       "max": 22,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día tranqui: 18 a la mañana, 26 a la tarde y nada de agua. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "templado",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 17,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 39,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 17,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 51,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 16,
+     "prob": 3,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 37,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 15,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 27,
+     "nubes": 14,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 14,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 17,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 20,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 21,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 3,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 5,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 1,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 0,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 0,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 0,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 0,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 8,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 6,
+     "nubes": 0,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 6,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 0,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 0,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 4,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 7,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 8,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 12,
+     "st": 21
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 13,
+     "st": 21
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 14,
+     "st": 20
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "cordoba",
+   "nombre": "Córdoba",
+   "lat": -31.4201,
+   "lon": -64.1888,
+   "aeropuertos": [
+    "SACO"
+   ],
+   "ahora": {
+    "aeropuerto": "SACO",
+    "nombre": "Córdoba",
+    "hora": "2026-11-07T16:00",
+    "temp": 20,
+    "punto_rocio": 6,
+    "viento": 15,
+    "rafagas": null,
+    "tiempo": "despejado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SACO 071900Z 18008KT 130V210 CAVOK 20/06 Q1025 NOSIG"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 22,
+     "min": 10,
+     "viento": 37,
+     "st_max": 20,
+     "st_min": 9,
+     "uv": 9,
+     "prob_lluvia": 71,
+     "modelos_con_lluvia": 5,
+     "modelos_total": 7,
+     "mm": 0.8,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 56,
+     "nubes": 18,
+     "cape": 30,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 22,
+       "min": 13,
+       "mm": 0.5,
+       "rafagas": 66
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 12,
+       "mm": 0.3,
+       "rafagas": 56
+      },
+      "icon_seamless": {
+       "max": 21,
+       "min": 12,
+       "mm": 0.4,
+       "rafagas": 60
+      },
+      "gem_seamless": {
+       "max": 21,
+       "min": 12,
+       "mm": 1.2,
+       "rafagas": 56
+      },
+      "meteofrance_seamless": {
+       "max": 23,
+       "min": 13,
+       "mm": 0.8,
+       "rafagas": 54
+      },
+      "ukmo_seamless": {
+       "max": 22,
+       "min": 12,
+       "mm": 1.2,
+       "rafagas": 46
+      },
+      "jma_seamless": {
+       "max": 24,
+       "min": 15,
+       "mm": 1.4,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 36,
+      "nubes": 14,
+      "cape": 10,
+      "cielo": "sol",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "Lo peor ya pasó. De acá a la noche, seco. Ojo con el cambio: 10° temprano y 22° a la tarde. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 24,
+     "min": 7,
+     "viento": 25,
+     "st_max": 23,
+     "st_min": 8,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 31,
+     "nubes": 0,
+     "cape": 0,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 24,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "gfs_seamless": {
+       "max": 25,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 6,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "meteofrance_seamless": {
+       "max": 25,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "ukmo_seamless": {
+       "max": 23,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 7 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 26,
+     "min": 9,
+     "viento": 32,
+     "st_max": 24,
+     "st_min": 10,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 45,
+     "nubes": 0,
+     "cape": 10,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 26,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 50
+      },
+      "gfs_seamless": {
+       "max": 26,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "icon_seamless": {
+       "max": 26,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 53
+      },
+      "gem_seamless": {
+       "max": 25,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 43
+      },
+      "meteofrance_seamless": {
+       "max": 29,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 42
+      },
+      "ukmo_seamless": {
+       "max": 26,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 45
+      },
+      "jma_seamless": {
+       "max": 29,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 9 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano. Encima sopla: ráfagas de 45 km/h, agarrá bien lo que lleves. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 26,
+     "min": 13,
+     "viento": 24,
+     "st_max": 27,
+     "st_min": 14,
+     "uv": 9,
+     "prob_lluvia": 43,
+     "modelos_con_lluvia": 3,
+     "modelos_total": 7,
+     "mm": 0.1,
+     "franjas_lluvia": [],
+     "rafagas": 29,
+     "nubes": 48,
+     "cape": 120,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 26,
+       "min": 15,
+       "mm": 1.0,
+       "rafagas": 34
+      },
+      "gfs_seamless": {
+       "max": 28,
+       "min": 16,
+       "mm": 1.2,
+       "rafagas": 28
+      },
+      "icon_seamless": {
+       "max": 27,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gem_seamless": {
+       "max": 27,
+       "min": 13,
+       "mm": 0.1,
+       "rafagas": 24
+      },
+      "meteofrance_seamless": {
+       "max": 31,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "ukmo_seamless": {
+       "max": 22,
+       "min": 14,
+       "mm": 4.2,
+       "rafagas": 26
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Cielo indeciso. Paraguas en la mochila y a la calle. Arranca en 13° y llega a 26°: vestite en capas. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 32,
+     "min": 13,
+     "viento": 20,
+     "st_max": 33,
+     "st_min": 16,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 25,
+     "nubes": 4,
+     "cape": 95,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 31,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "gfs_seamless": {
+       "max": 33,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "icon_seamless": {
+       "max": 33,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gem_seamless": {
+       "max": 32,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 16
+      },
+      "meteofrance_seamless": {
+       "max": 34,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "ukmo_seamless": {
+       "max": 29,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "jma_seamless": {
+       "max": 34,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Máxima de 32. El miércoles el asiento del colectivo quema; elegí bien dónde te sentás. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 35,
+     "min": 16,
+     "viento": 28,
+     "st_max": 35,
+     "st_min": 19,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 37,
+     "nubes": 27,
+     "cape": 1860,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 35,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "gfs_seamless": {
+       "max": 35,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "icon_seamless": {
+       "max": 37,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "gem_seamless": {
+       "max": 35,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 37
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 32,
+       "min": 17,
+       "mm": 0.3,
+       "rafagas": 43
+      },
+      "jma_seamless": {
+       "max": 35,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "35 grados. Agua, sombra y nada de hacerse el valiente al sol del mediodía. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 34,
+     "min": 20,
+     "viento": 29,
+     "st_max": 35,
+     "st_min": 25,
+     "uv": 10,
+     "prob_lluvia": 83,
+     "modelos_con_lluvia": 5,
+     "modelos_total": 6,
+     "mm": 3.8,
+     "franjas_lluvia": [
+      "noche"
+     ],
+     "rafagas": 47,
+     "nubes": 56,
+     "cape": 2440,
+     "cielo": "tormenta",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 36,
+       "min": 23,
+       "mm": 6.4,
+       "rafagas": 52
+      },
+      "gfs_seamless": {
+       "max": 34,
+       "min": 22,
+       "mm": 0.6,
+       "rafagas": 49
+      },
+      "icon_seamless": {
+       "max": 35,
+       "min": 22,
+       "mm": 13.0,
+       "rafagas": 46
+      },
+      "gem_seamless": {
+       "max": 32,
+       "min": 24,
+       "mm": 16.2,
+       "rafagas": 40
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 33,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 50
+      },
+      "jma_seamless": {
+       "max": 33,
+       "min": 23,
+       "mm": 1.2,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Se arma tormenta a la noche. Si tenés que salir, hacelo antes y con paraguas. Y ojo con el viento: ráfagas de 47 km/h. Ah, y pega fuerte el calor: 34°. Ojo con el sol: índice UV 10, protector entre las 11 y las 16.",
+      "situacion": "tormenta_posible",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 35,
+     "nubes": 11,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 33,
+     "nubes": 12,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 18,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 20,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 25,
+     "nubes": 14,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 14,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 5,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 4,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 2,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 0,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 0,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 0,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 0,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 0,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 21,
+     "nubes": 0,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 22,
+     "nubes": 0,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 0,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 25,
+     "nubes": 0,
+     "st": 22
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 22,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 25,
+     "nubes": 0,
+     "st": 23
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 22,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 26,
+     "nubes": 0,
+     "st": 23
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "rosario",
+   "nombre": "Rosario",
+   "lat": -32.9442,
+   "lon": -60.6505,
+   "aeropuertos": [
+    "SAAR"
+   ],
+   "ahora": {
+    "aeropuerto": "SAAR",
+    "nombre": "Rosario",
+    "hora": "2026-11-07T16:00",
+    "temp": 19,
+    "punto_rocio": 7,
+    "viento": 26,
+    "rafagas": null,
+    "tiempo": "despejado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SAAR 071900Z 20014KT CAVOK 19/07 Q1023"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 20,
+     "min": 12,
+     "viento": 34,
+     "st_max": 18,
+     "st_min": 10,
+     "uv": 9,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 1.4,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 51,
+     "nubes": 41,
+     "cape": 20,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 20,
+       "min": 14,
+       "mm": 1.4,
+       "rafagas": 51
+      },
+      "gfs_seamless": {
+       "max": 19,
+       "min": 12,
+       "mm": 5.4,
+       "rafagas": 46
+      },
+      "icon_seamless": {
+       "max": 20,
+       "min": 13,
+       "mm": 0.9,
+       "rafagas": 53
+      },
+      "gem_seamless": {
+       "max": 18,
+       "min": 13,
+       "mm": 0.5,
+       "rafagas": 61
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.2,
+       "rafagas": 43
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 14,
+       "mm": 3.2,
+       "rafagas": 50
+      },
+      "jma_seamless": {
+       "max": 22,
+       "min": 14,
+       "mm": 1.8,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 37,
+      "nubes": 21,
+      "cape": 15,
+      "cielo": "sol",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "La lluvia ya pasó. Si te mojaste temprano, a la tarde te secás. Temperatura amable: entre 12° y 20°. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 22,
+     "min": 8,
+     "viento": 18,
+     "st_max": 22,
+     "st_min": 9,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 21,
+     "nubes": 7,
+     "cape": 5,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 20,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 21
+      },
+      "gfs_seamless": {
+       "max": 23,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "icon_seamless": {
+       "max": 21,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "gem_seamless": {
+       "max": 22,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 18
+      },
+      "meteofrance_seamless": {
+       "max": 21,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "ukmo_seamless": {
+       "max": 20,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "jma_seamless": {
+       "max": 22,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Arranca fresco, 8 temprano, y después mejora. Salí con abrigo, que a la tarde lo vas a llevar en la mano. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 26,
+     "min": 10,
+     "viento": 24,
+     "st_max": 25,
+     "st_min": 10,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 34,
+     "nubes": 0,
+     "cape": 0,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 24,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "gfs_seamless": {
+       "max": 26,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 49
+      },
+      "icon_seamless": {
+       "max": 25,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "gem_seamless": {
+       "max": 26,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "meteofrance_seamless": {
+       "max": 25,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "ukmo_seamless": {
+       "max": 25,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 26,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día de diez: 26 de máxima y sin lluvia. Ideal para la plaza, el parque o el balcón. Ojo con el cambio: 10° temprano y 26° a la tarde. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 27,
+     "min": 14,
+     "viento": 24,
+     "st_max": 28,
+     "st_min": 14,
+     "uv": 8,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 1.1,
+     "franjas_lluvia": [
+      "noche"
+     ],
+     "rafagas": 37,
+     "nubes": 76,
+     "cape": 220,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 26,
+       "min": 15,
+       "mm": 1.5,
+       "rafagas": 31
+      },
+      "gfs_seamless": {
+       "max": 29,
+       "min": 14,
+       "mm": 0.3,
+       "rafagas": 50
+      },
+      "icon_seamless": {
+       "max": 27,
+       "min": 14,
+       "mm": 2.1,
+       "rafagas": 48
+      },
+      "gem_seamless": {
+       "max": 26,
+       "min": 16,
+       "mm": 4.6,
+       "rafagas": 31
+      },
+      "meteofrance_seamless": {
+       "max": 27,
+       "min": 14,
+       "mm": 1.1,
+       "rafagas": 34
+      },
+      "ukmo_seamless": {
+       "max": 25,
+       "min": 17,
+       "mm": 0.6,
+       "rafagas": 30
+      },
+      "jma_seamless": {
+       "max": 28,
+       "min": 17,
+       "mm": 0.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Se viene agua a la noche. Llevá paraguas aunque al salir parezca que no. La temperatura acompaña: 27° de máxima. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 28,
+     "min": 17,
+     "viento": 19,
+     "st_max": 31,
+     "st_min": 20,
+     "uv": 8,
+     "prob_lluvia": 57,
+     "modelos_con_lluvia": 4,
+     "modelos_total": 7,
+     "mm": 1.2,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 24,
+     "nubes": 32,
+     "cape": 525,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 27,
+       "min": 17,
+       "mm": 3.3,
+       "rafagas": 23
+      },
+      "gfs_seamless": {
+       "max": 28,
+       "min": 17,
+       "mm": 3.5,
+       "rafagas": 32
+      },
+      "icon_seamless": {
+       "max": 30,
+       "min": 19,
+       "mm": 1.2,
+       "rafagas": 30
+      },
+      "gem_seamless": {
+       "max": 29,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 14
+      },
+      "meteofrance_seamless": {
+       "max": 30,
+       "min": 18,
+       "mm": 0.1,
+       "rafagas": 25
+      },
+      "ukmo_seamless": {
+       "max": 25,
+       "min": 19,
+       "mm": 1.8,
+       "rafagas": 21
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Atenti: llueve de madrugada. Hacé los mandados antes o dejalos para después. Llega a 28°: remera tranquilo. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "lluvia_franja",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 32,
+     "min": 17,
+     "viento": 22,
+     "st_max": 34,
+     "st_min": 20,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 28,
+     "nubes": 23,
+     "cape": 1150,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 29,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gfs_seamless": {
+       "max": 34,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "icon_seamless": {
+       "max": 34,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 32,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "jma_seamless": {
+       "max": 29,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Calor de 32. Ideal para un helado. O dos. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 33,
+     "min": 19,
+     "viento": 24,
+     "st_max": 34,
+     "st_min": 22,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 35,
+     "nubes": 62,
+     "cape": 1370,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 31,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "gfs_seamless": {
+       "max": 32,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 55
+      },
+      "icon_seamless": {
+       "max": 33,
+       "min": 23,
+       "mm": 0.3,
+       "rafagas": 28
+      },
+      "gem_seamless": {
+       "max": 35,
+       "min": 22,
+       "mm": 0.3,
+       "rafagas": 31
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 30,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "jma_seamless": {
+       "max": 30,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Máxima de 33. Es un buen día para hacerte amigo de alguien con pileta. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "calor",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 36,
+     "nubes": 24,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 34,
+     "nubes": 24,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 16,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 12,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 25,
+     "nubes": 7,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 4,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 5,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 6,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 1,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 0,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 0,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 0,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 14,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 14,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 14,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 14,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 3,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 6,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 6,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 10,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 10,
+     "st": 22
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 11,
+     "st": 22
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 9,
+     "st": 22
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "mendoza",
+   "nombre": "Mendoza",
+   "lat": -32.8895,
+   "lon": -68.8458,
+   "aeropuertos": [
+    "SAME"
+   ],
+   "ahora": {
+    "aeropuerto": "SAME",
+    "nombre": "Mendoza",
+    "hora": "2026-11-07T16:00",
+    "temp": 21,
+    "punto_rocio": 2,
+    "viento": 7,
+    "rafagas": null,
+    "tiempo": "despejado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SAME 071900Z VRB04KT CAVOK 21/02 Q1024"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 22,
+     "min": 9,
+     "viento": 28,
+     "st_max": 18,
+     "st_min": 5,
+     "uv": 9,
+     "prob_lluvia": 86,
+     "modelos_con_lluvia": 6,
+     "modelos_total": 7,
+     "mm": 0.8,
+     "franjas_lluvia": [
+      "madrugada"
+     ],
+     "rafagas": 41,
+     "nubes": 6,
+     "cape": 25,
+     "cielo": "lluvia",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 10,
+       "mm": 0.5,
+       "rafagas": 51
+      },
+      "gfs_seamless": {
+       "max": 21,
+       "min": 11,
+       "mm": 1.5,
+       "rafagas": 33
+      },
+      "icon_seamless": {
+       "max": 22,
+       "min": 10,
+       "mm": 2.9,
+       "rafagas": 35
+      },
+      "gem_seamless": {
+       "max": 20,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 47
+      },
+      "meteofrance_seamless": {
+       "max": 21,
+       "min": 9,
+       "mm": 1.6,
+       "rafagas": 36
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 8,
+       "mm": 0.6,
+       "rafagas": 46
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 10,
+       "mm": 0.8,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 23,
+      "nubes": 3,
+      "cape": 0,
+      "cielo": "sol",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "Lo peor ya pasó. De acá a la noche, seco. Con el viento, temprano se siente como 5°. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "ya_paro",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 26,
+     "min": 11,
+     "viento": 19,
+     "st_max": 23,
+     "st_min": 9,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 28,
+     "nubes": 0,
+     "cape": 0,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 24,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "gfs_seamless": {
+       "max": 26,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "icon_seamless": {
+       "max": 26,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 16
+      },
+      "meteofrance_seamless": {
+       "max": 25,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "ukmo_seamless": {
+       "max": 24,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "jma_seamless": {
+       "max": 22,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Día de diez: 26 de máxima y sin lluvia. Ideal para la plaza, el parque o el balcón. Ojo con el cambio: 11° temprano y 26° a la tarde. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 30,
+     "min": 15,
+     "viento": 20,
+     "st_max": 27,
+     "st_min": 13,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 29,
+     "nubes": 21,
+     "cape": 50,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 28,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gfs_seamless": {
+       "max": 29,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "icon_seamless": {
+       "max": 30,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gem_seamless": {
+       "max": 28,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "meteofrance_seamless": {
+       "max": 30,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "ukmo_seamless": {
+       "max": 28,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Linda máxima de 30. Remera y a disfrutar. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 30,
+     "min": 17,
+     "viento": 32,
+     "st_max": 28,
+     "st_min": 15,
+     "uv": 9,
+     "prob_lluvia": 43,
+     "modelos_con_lluvia": 3,
+     "modelos_total": 7,
+     "mm": 0.4,
+     "franjas_lluvia": [],
+     "rafagas": 46,
+     "nubes": 29,
+     "cape": 270,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 30,
+       "min": 19,
+       "mm": 0.4,
+       "rafagas": 53
+      },
+      "gfs_seamless": {
+       "max": 29,
+       "min": 17,
+       "mm": 7.2,
+       "rafagas": 52
+      },
+      "icon_seamless": {
+       "max": 30,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 51
+      },
+      "gem_seamless": {
+       "max": 28,
+       "min": 15,
+       "mm": 1.9,
+       "rafagas": 41
+      },
+      "meteofrance_seamless": {
+       "max": 30,
+       "min": 19,
+       "mm": 0.3,
+       "rafagas": 33
+      },
+      "ukmo_seamless": {
+       "max": 25,
+       "min": 16,
+       "mm": 9.3,
+       "rafagas": 48
+      },
+      "jma_seamless": {
+       "max": 27,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Puede caer algo. Si te mojás, que no sea por no haber leído esto. Y ojo con el viento: ráfagas de 46 km/h. Máxima de 30°, para andar liviano. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 34,
+     "min": 19,
+     "viento": 26,
+     "st_max": 30,
+     "st_min": 18,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 36,
+     "nubes": 24,
+     "cape": 15,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 33,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 46
+      },
+      "gfs_seamless": {
+       "max": 33,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "icon_seamless": {
+       "max": 34,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "gem_seamless": {
+       "max": 32,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "meteofrance_seamless": {
+       "max": 33,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "ukmo_seamless": {
+       "max": 30,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 31,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "34 grados. Agua, sombra y nada de hacerse el valiente al sol del mediodía. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 37,
+     "min": 21,
+     "viento": 18,
+     "st_max": 34,
+     "st_min": 19,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 22,
+     "nubes": 18,
+     "cape": 380,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 36,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gfs_seamless": {
+       "max": 35,
+       "min": 24,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "icon_seamless": {
+       "max": 38,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 35,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": 14
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 33,
+       "min": 20,
+       "mm": 0.2,
+       "rafagas": 25
+      },
+      "jma_seamless": {
+       "max": 32,
+       "min": 24,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "37 grados. Agua, sombra y nada de hacerse el valiente al sol del mediodía. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 36,
+     "min": 23,
+     "viento": 25,
+     "st_max": 34,
+     "st_min": 22,
+     "uv": 10,
+     "prob_lluvia": 83,
+     "modelos_con_lluvia": 5,
+     "modelos_total": 6,
+     "mm": 4.4,
+     "franjas_lluvia": [
+      "tarde",
+      "noche"
+     ],
+     "rafagas": 42,
+     "nubes": 35,
+     "cape": 1750,
+     "cielo": "tormenta",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 36,
+       "min": 25,
+       "mm": 1.4,
+       "rafagas": 47
+      },
+      "gfs_seamless": {
+       "max": 37,
+       "min": 23,
+       "mm": 7.1,
+       "rafagas": 51
+      },
+      "icon_seamless": {
+       "max": 34,
+       "min": 24,
+       "mm": 0.0,
+       "rafagas": 44
+      },
+      "gem_seamless": {
+       "max": 33,
+       "min": 21,
+       "mm": 7.2,
+       "rafagas": 36
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 31,
+       "min": 23,
+       "mm": 15.4,
+       "rafagas": 32
+      },
+      "jma_seamless": {
+       "max": 31,
+       "min": 24,
+       "mm": 1.6,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "A la tarde y a la noche hay condiciones de tormenta. Mirá el cielo y las alertas del SMN antes de salir. Sumale viento, con ráfagas de 42 km/h. Con 36° de máxima, tomá agua seguido. Ojo con el sol: índice UV 10, protector entre las 11 y las 16.",
+      "situacion": "tormenta_posible",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 21,
+     "nubes": 2,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 3,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 4,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 4,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 2,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 1,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 0,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 0,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 1,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 2,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 2,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 1,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 0,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 0,
+     "st": 10
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 14,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 0,
+     "st": 11
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 0,
+     "st": 13
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 0,
+     "st": 14
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 0,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 0,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 22,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 0,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 24,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 0,
+     "st": 22
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 24,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 0,
+     "st": 23
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "tucuman",
+   "nombre": "Tucumán",
+   "lat": -26.8083,
+   "lon": -65.2176,
+   "aeropuertos": [
+    "SANT"
+   ],
+   "ahora": {
+    "aeropuerto": "SANT",
+    "nombre": "Tucumán",
+    "hora": "2026-11-07T16:00",
+    "temp": 19,
+    "punto_rocio": 10,
+    "viento": 17,
+    "rafagas": null,
+    "tiempo": "cubierto",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SANT 071900Z 27009KT 9000 BKN070 OVC090 19/10 Q1024"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 27,
+     "min": 17,
+     "viento": 27,
+     "st_max": 26,
+     "st_min": 16,
+     "uv": 9,
+     "prob_lluvia": 14,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 7,
+     "mm": 0.1,
+     "franjas_lluvia": [],
+     "rafagas": 49,
+     "nubes": 85,
+     "cape": 110,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 26,
+       "min": 17,
+       "mm": 0.2,
+       "rafagas": 49
+      },
+      "gfs_seamless": {
+       "max": 24,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "icon_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.1,
+       "rafagas": 54
+      },
+      "gem_seamless": {
+       "max": 26,
+       "min": 19,
+       "mm": 0.1,
+       "rafagas": 68
+      },
+      "meteofrance_seamless": {
+       "max": 28,
+       "min": 21,
+       "mm": 0.7,
+       "rafagas": 48
+      },
+      "ukmo_seamless": {
+       "max": 27,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "jma_seamless": {
+       "max": 29,
+       "min": 19,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 23,
+      "nubes": 74,
+      "cape": 15,
+      "cielo": "nublado",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "Linda máxima de 27. Remera y a disfrutar. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 26,
+     "min": 14,
+     "viento": 17,
+     "st_max": 25,
+     "st_min": 14,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 22,
+     "nubes": 41,
+     "cape": 10,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 24,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gfs_seamless": {
+       "max": 26,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 13
+      },
+      "icon_seamless": {
+       "max": 20,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 21
+      },
+      "gem_seamless": {
+       "max": 26,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 19
+      },
+      "meteofrance_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 26
+      },
+      "ukmo_seamless": {
+       "max": 24,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "jma_seamless": {
+       "max": 28,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Sin lluvia y con 26 de máxima. Vestite como quieras, mañana el clima no se mete. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "templado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 32,
+     "min": 15,
+     "viento": 21,
+     "st_max": 31,
+     "st_min": 16,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 32,
+     "nubes": 14,
+     "cape": 10,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 30,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "gfs_seamless": {
+       "max": 32,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "icon_seamless": {
+       "max": 30,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "gem_seamless": {
+       "max": 31,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "meteofrance_seamless": {
+       "max": 31,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "ukmo_seamless": {
+       "max": 30,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "jma_seamless": {
+       "max": 32,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Calor de 32. Ideal para un helado. O dos. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 32,
+     "min": 17,
+     "viento": 24,
+     "st_max": 33,
+     "st_min": 18,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 36,
+     "nubes": 15,
+     "cape": 220,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 30,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 49
+      },
+      "gfs_seamless": {
+       "max": 32,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "icon_seamless": {
+       "max": 30,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": 32
+      },
+      "gem_seamless": {
+       "max": 32,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "meteofrance_seamless": {
+       "max": 33,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 29
+      },
+      "ukmo_seamless": {
+       "max": 30,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 43
+      },
+      "jma_seamless": {
+       "max": 34,
+       "min": 23,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Calor de 32. Ideal para un helado. O dos. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 36,
+     "min": 21,
+     "viento": 17,
+     "st_max": 37,
+     "st_min": 22,
+     "uv": 9,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 23,
+     "nubes": 11,
+     "cape": 450,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 34,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "gfs_seamless": {
+       "max": 35,
+       "min": 20,
+       "mm": 0.0,
+       "rafagas": 14
+      },
+      "icon_seamless": {
+       "max": 36,
+       "min": 23,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "gem_seamless": {
+       "max": 37,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 18
+      },
+      "meteofrance_seamless": {
+       "max": 36,
+       "min": 22,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "ukmo_seamless": {
+       "max": 33,
+       "min": 21,
+       "mm": 0.0,
+       "rafagas": 18
+      },
+      "jma_seamless": {
+       "max": 36,
+       "min": 24,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Máxima de 36. El miércoles el asiento del colectivo quema; elegí bien dónde te sentás. UV 9: protector y gorra si vas a estar al sol.",
+      "situacion": "calor",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 39,
+     "min": 23,
+     "viento": 20,
+     "st_max": 40,
+     "st_min": 25,
+     "uv": 10,
+     "prob_lluvia": 17,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 27,
+     "nubes": 24,
+     "cape": 1970,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 37,
+       "min": 23,
+       "mm": 0.0,
+       "rafagas": 21
+      },
+      "gfs_seamless": {
+       "max": 37,
+       "min": 24,
+       "mm": 0.0,
+       "rafagas": 27
+      },
+      "icon_seamless": {
+       "max": 39,
+       "min": 24,
+       "mm": 0.0,
+       "rafagas": 22
+      },
+      "gem_seamless": {
+       "max": 40,
+       "min": 24,
+       "mm": 0.0,
+       "rafagas": 28
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 37,
+       "min": 22,
+       "mm": 0.3,
+       "rafagas": 35
+      },
+      "jma_seamless": {
+       "max": 38,
+       "min": 26,
+       "mm": 6.4,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "⚠️ Máxima de 39 °C. Hidratate aunque no tengas sed, buscá la sombra y no dejes a nadie dentro de un auto cerrado.",
+      "situacion": "serio_calor",
+      "seria": true
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 38,
+     "min": 24,
+     "viento": 21,
+     "st_max": 40,
+     "st_min": 28,
+     "uv": 8,
+     "prob_lluvia": 83,
+     "modelos_con_lluvia": 5,
+     "modelos_total": 6,
+     "mm": 3.6,
+     "franjas_lluvia": [
+      "tarde",
+      "noche"
+     ],
+     "rafagas": 36,
+     "nubes": 34,
+     "cape": 3100,
+     "cielo": "tormenta",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 38,
+       "min": 24,
+       "mm": 0.6,
+       "rafagas": 34
+      },
+      "gfs_seamless": {
+       "max": 39,
+       "min": 25,
+       "mm": 0.3,
+       "rafagas": 46
+      },
+      "icon_seamless": {
+       "max": 39,
+       "min": 26,
+       "mm": 3.6,
+       "rafagas": 39
+      },
+      "gem_seamless": {
+       "max": 39,
+       "min": 24,
+       "mm": 6.0,
+       "rafagas": 22
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 36,
+       "min": 26,
+       "mm": 3.6,
+       "rafagas": 37
+      },
+      "jma_seamless": {
+       "max": 34,
+       "min": 23,
+       "mm": 15.4,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "⚠️ Calor extremo: 38 °C. Tomá agua seguido, evitá el sol entre las 11 y las 17 y cuidá a chicos, personas mayores y mascotas.",
+      "situacion": "serio_calor",
+      "seria": true
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 22,
+     "prob": 2,
+     "mm": 0.0,
+     "rafagas": 22,
+     "nubes": 77,
+     "st": 21
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 22,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 21,
+     "nubes": 72,
+     "st": 21
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 22,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 74,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 21,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 83,
+     "st": 20
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 80,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 69,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 59,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 11,
+     "nubes": 58,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 57,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 39,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 9,
+     "nubes": 31,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 29,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 16,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 7,
+     "nubes": 22,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 6,
+     "nubes": 17,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 5,
+     "nubes": 16,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 6,
+     "nubes": 15,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 18,
+     "st": 16
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 20,
+     "st": 17
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 18,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 21,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 30,
+     "st": 21
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 22,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 47,
+     "st": 22
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 23,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 68,
+     "st": 23
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 23,
+     "prob": 1,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 63,
+     "st": 23
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 24,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 19,
+     "nubes": 45,
+     "st": 24
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  },
+  {
+   "id": "mar-del-plata",
+   "nombre": "Mar del Plata",
+   "lat": -38.0055,
+   "lon": -57.5426,
+   "aeropuertos": [
+    "SAZM"
+   ],
+   "ahora": {
+    "aeropuerto": "SAZM",
+    "nombre": "Mar del Plata",
+    "hora": "2026-11-07T16:00",
+    "temp": 14,
+    "punto_rocio": 5,
+    "viento": 19,
+    "rafagas": null,
+    "tiempo": "parcialmente nublado",
+    "llueve": false,
+    "tormenta": false,
+    "granizo": false,
+    "crudo": "METAR SAZM 071900Z 20010KT 180V260 9999 SCT035 14/05 Q1025"
+   },
+   "dias": [
+    {
+     "fecha": "2026-11-07",
+     "dia_semana": "sábado",
+     "max": 15,
+     "min": 8,
+     "viento": 32,
+     "st_max": 10,
+     "st_min": 5,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 47,
+     "nubes": 34,
+     "cape": 35,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 13,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 56
+      },
+      "gfs_seamless": {
+       "max": 14,
+       "min": 6,
+       "mm": 0.0,
+       "rafagas": 42
+      },
+      "icon_seamless": {
+       "max": 13,
+       "min": 7,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "gem_seamless": {
+       "max": 13,
+       "min": 7,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "meteofrance_seamless": {
+       "max": 13,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 46
+      },
+      "ukmo_seamless": {
+       "max": 12,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 56
+      },
+      "jma_seamless": {
+       "max": 13,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "resto_del_dia": {
+      "prob_lluvia": 0,
+      "modelos_con_lluvia": 0,
+      "modelos_total": 7,
+      "mm": 0.0,
+      "franjas_lluvia": [],
+      "rafagas": 32,
+      "nubes": 17,
+      "cape": 5,
+      "cielo": "sol",
+      "desde": "16:00"
+     },
+     "frase": {
+      "texto": "Fresco temprano (8), templado después (15). El clásico día de olvidarse el buzo en algún lado. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-08",
+     "dia_semana": "domingo",
+     "max": 21,
+     "min": 6,
+     "viento": 21,
+     "st_max": 20,
+     "st_min": 4,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 29,
+     "nubes": 4,
+     "cape": 10,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 18,
+       "min": 6,
+       "mm": 0.0,
+       "rafagas": 33
+      },
+      "gfs_seamless": {
+       "max": 20,
+       "min": 4,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "icon_seamless": {
+       "max": 22,
+       "min": 4,
+       "mm": 0.0,
+       "rafagas": 25
+      },
+      "gem_seamless": {
+       "max": 21,
+       "min": 4,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "meteofrance_seamless": {
+       "max": 19,
+       "min": 9,
+       "mm": 0.0,
+       "rafagas": 31
+      },
+      "ukmo_seamless": {
+       "max": 16,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 35
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Fresco temprano (6), templado después (21). El clásico día de olvidarse el buzo en algún lado. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "fresco",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-09",
+     "dia_semana": "lunes",
+     "max": 24,
+     "min": 11,
+     "viento": 27,
+     "st_max": 21,
+     "st_min": 9,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 41,
+     "nubes": 3,
+     "cape": 10,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 22,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 43
+      },
+      "gfs_seamless": {
+       "max": 22,
+       "min": 8,
+       "mm": 0.0,
+       "rafagas": 49
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "gem_seamless": {
+       "max": 24,
+       "min": 10,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "meteofrance_seamless": {
+       "max": 21,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "ukmo_seamless": {
+       "max": 19,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 38
+      },
+      "jma_seamless": {
+       "max": 22,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Sol y 24 grados. Si no salís a dar una vuelta, es porque no querés. Sumale viento, con ráfagas de 41 km/h. Arranca en 11° y llega a 24°: vestite en capas. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "lindo",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-10",
+     "dia_semana": "martes",
+     "max": 25,
+     "min": 13,
+     "viento": 30,
+     "st_max": 21,
+     "st_min": 11,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 48,
+     "nubes": 73,
+     "cape": 0,
+     "cielo": "nublado",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 23,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 54
+      },
+      "gfs_seamless": {
+       "max": 24,
+       "min": 11,
+       "mm": 0.0,
+       "rafagas": 55
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 13,
+       "mm": 0.0,
+       "rafagas": 46
+      },
+      "gem_seamless": {
+       "max": 26,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 48
+      },
+      "meteofrance_seamless": {
+       "max": 23,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 50
+      },
+      "ukmo_seamless": {
+       "max": 20,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "jma_seamless": {
+       "max": 23,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Nublado pero sin lluvia. Gris, pero seco: no todo es malo. Sumale viento, con ráfagas de 48 km/h. Arranca en 13° y llega a 25°: vestite en capas. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "nublado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-11",
+     "dia_semana": "miércoles",
+     "max": 27,
+     "min": 16,
+     "viento": 24,
+     "st_max": 25,
+     "st_min": 15,
+     "uv": 8,
+     "prob_lluvia": 0,
+     "modelos_con_lluvia": 0,
+     "modelos_total": 7,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 32,
+     "nubes": 30,
+     "cape": 100,
+     "cielo": "sol",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 25,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "gfs_seamless": {
+       "max": 27,
+       "min": 12,
+       "mm": 0.0,
+       "rafagas": 40
+      },
+      "icon_seamless": {
+       "max": 26,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 30
+      },
+      "gem_seamless": {
+       "max": 27,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 23
+      },
+      "meteofrance_seamless": {
+       "max": 24,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 41
+      },
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 15,
+       "mm": 0.0,
+       "rafagas": 24
+      },
+      "jma_seamless": {
+       "max": 26,
+       "min": 18,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Máxima de 27. Día de anteojos de sol y de buscar la sombrita. UV 8: protector y gorra si vas a estar al sol.",
+      "situacion": "calorcito",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-12",
+     "dia_semana": "jueves",
+     "max": 25,
+     "min": 16,
+     "viento": 26,
+     "st_max": 24,
+     "st_min": 14,
+     "uv": 8,
+     "prob_lluvia": 17,
+     "modelos_con_lluvia": 1,
+     "modelos_total": 6,
+     "mm": 0.0,
+     "franjas_lluvia": [],
+     "rafagas": 37,
+     "nubes": 62,
+     "cape": 430,
+     "cielo": "parcial",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 25,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "gfs_seamless": {
+       "max": 20,
+       "min": 13,
+       "mm": 1.6,
+       "rafagas": 40
+      },
+      "icon_seamless": {
+       "max": 25,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 34
+      },
+      "gem_seamless": {
+       "max": 28,
+       "min": 17,
+       "mm": 0.0,
+       "rafagas": 36
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 18,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 39
+      },
+      "jma_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Máxima de 25, mínima de 16, sin lluvia. Un día normal, que no es poco. Ojo con el sol: índice UV 8, protector entre las 11 y las 16.",
+      "situacion": "templado",
+      "seria": false
+     }
+    },
+    {
+     "fecha": "2026-11-13",
+     "dia_semana": "viernes",
+     "max": 22,
+     "min": 16,
+     "viento": 33,
+     "st_max": 19,
+     "st_min": 14,
+     "uv": 5,
+     "prob_lluvia": 33,
+     "modelos_con_lluvia": 2,
+     "modelos_total": 6,
+     "mm": 0.2,
+     "franjas_lluvia": [],
+     "rafagas": 47,
+     "nubes": 75,
+     "cape": 230,
+     "cielo": "dudoso",
+     "por_modelo": {
+      "ecmwf_ifs": {
+       "max": 20,
+       "min": 17,
+       "mm": 27.4,
+       "rafagas": 58
+      },
+      "gfs_seamless": {
+       "max": 18,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": 53
+      },
+      "icon_seamless": {
+       "max": 24,
+       "min": 16,
+       "mm": 14.3,
+       "rafagas": 37
+      },
+      "gem_seamless": {
+       "max": 25,
+       "min": 17,
+       "mm": 0.3,
+       "rafagas": 38
+      },
+      "meteofrance_seamless": null,
+      "ukmo_seamless": {
+       "max": 17,
+       "min": 16,
+       "mm": 0.0,
+       "rafagas": 49
+      },
+      "jma_seamless": {
+       "max": 16,
+       "min": 14,
+       "mm": 0.0,
+       "rafagas": null
+      }
+     },
+     "frase": {
+      "texto": "Los modelos no se ponen de acuerdo. Nosotros tampoco. Llevá el paraguas por las dudas. Sumale viento, con ráfagas de 47 km/h. Máxima de 22° y mínima de 16°, bastante agradable.",
+      "situacion": "dudoso",
+      "seria": false
+     }
+    }
+   ],
+   "horas": [
+    {
+     "hora": "2026-11-07T16:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 32,
+     "nubes": 20,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-07T17:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 31,
+     "nubes": 18,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-07T18:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 30,
+     "nubes": 12,
+     "st": 8
+    },
+    {
+     "hora": "2026-11-07T19:00",
+     "temp": 12,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 28,
+     "nubes": 16,
+     "st": 7
+    },
+    {
+     "hora": "2026-11-07T20:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 21,
+     "nubes": 20,
+     "st": 7
+    },
+    {
+     "hora": "2026-11-07T21:00",
+     "temp": 10,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 5,
+     "st": 7
+    },
+    {
+     "hora": "2026-11-07T22:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 13,
+     "nubes": 2,
+     "st": 7
+    },
+    {
+     "hora": "2026-11-07T23:00",
+     "temp": 9,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 4,
+     "st": 6
+    },
+    {
+     "hora": "2026-11-08T00:00",
+     "temp": 8,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 10,
+     "nubes": 7,
+     "st": 6
+    },
+    {
+     "hora": "2026-11-08T01:00",
+     "temp": 8,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 10,
+     "st": 6
+    },
+    {
+     "hora": "2026-11-08T02:00",
+     "temp": 7,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 6,
+     "nubes": 13,
+     "st": 6
+    },
+    {
+     "hora": "2026-11-08T03:00",
+     "temp": 7,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 8,
+     "nubes": 14,
+     "st": 5
+    },
+    {
+     "hora": "2026-11-08T04:00",
+     "temp": 7,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 12,
+     "nubes": 13,
+     "st": 4
+    },
+    {
+     "hora": "2026-11-08T05:00",
+     "temp": 7,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 14,
+     "nubes": 11,
+     "st": 4
+    },
+    {
+     "hora": "2026-11-08T06:00",
+     "temp": 7,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 15,
+     "nubes": 8,
+     "st": 4
+    },
+    {
+     "hora": "2026-11-08T07:00",
+     "temp": 8,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 5,
+     "st": 5
+    },
+    {
+     "hora": "2026-11-08T08:00",
+     "temp": 11,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 20,
+     "nubes": 2,
+     "st": 7
+    },
+    {
+     "hora": "2026-11-08T09:00",
+     "temp": 13,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 24,
+     "nubes": 0,
+     "st": 9
+    },
+    {
+     "hora": "2026-11-08T10:00",
+     "temp": 15,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 23,
+     "nubes": 0,
+     "st": 12
+    },
+    {
+     "hora": "2026-11-08T11:00",
+     "temp": 17,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 21,
+     "nubes": 2,
+     "st": 15
+    },
+    {
+     "hora": "2026-11-08T12:00",
+     "temp": 18,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 4,
+     "st": 18
+    },
+    {
+     "hora": "2026-11-08T13:00",
+     "temp": 19,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 16,
+     "nubes": 5,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T14:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 17,
+     "nubes": 5,
+     "st": 19
+    },
+    {
+     "hora": "2026-11-08T15:00",
+     "temp": 20,
+     "prob": 0,
+     "mm": 0.0,
+     "rafagas": 18,
+     "nubes": 7,
+     "st": 19
+    }
+   ],
+   "alertas_smn": [],
+   "tormenta": null,
+   "actualizado": "2026-11-07T16:17"
+  }
+ ]
+}

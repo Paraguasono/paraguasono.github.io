@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Panel — Che, Clima</title>
+  <link rel="icon" type="image/png" href="icono-64.png">
+  <link rel="stylesheet" href="estilos.css?v=panel1">
+  <style>
+    .pestanas { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+    .pestanas button { border: 1px solid var(--linea); background: var(--tarjeta); color: var(--texto); border-radius: 999px; padding: 8px 14px; font-weight: 600; cursor: pointer; }
+    .pestanas button[aria-pressed="true"] { background: var(--marca); border-color: var(--marca); color: var(--tarjeta); }
+    .item h2 { margin-top: 0; }
+    .contenido-md { font-size: 16px; line-height: 1.55; }
+    .contenido-md table { border-collapse: collapse; width: 100%; font-size: 14px; display: block; overflow-x: auto; }
+    .contenido-md th, .contenido-md td { border-bottom: 1px solid var(--linea); padding: 6px 8px; text-align: left; vertical-align: top; }
+    .contenido-md th { white-space: nowrap; }
+    /* Las celdas con texto largo (ganchos, notas) reciben un ancho cómodo desde panel.js;
+       la tabla se desliza de costado en el celular */
+    .contenido-md td.largo { min-width: 15em; }
+    .fecha-item { color: var(--suave); font-size: 13px; margin: 0 0 6px; }
+    .boton { border: 0; border-radius: 12px; padding: 12px 18px; font-weight: 700; background: var(--marca); color: var(--tarjeta); cursor: pointer; font-size: 16px; }
+    .vacio { color: var(--suave); }
+    .imagenes { margin: 4px 0 16px; }
+    .miniaturas { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; }
+    .miniaturas img { height: 260px; width: auto; border-radius: 10px; border: 1px solid var(--linea); flex: none; }
+    .botonera { display: grid; gap: 8px; margin-top: 8px; }
+    .boton.secundario { background: transparent; color: var(--marca); border: 1px solid var(--marca); }
+    .boton:disabled { opacity: .5; }
+    .reproductor { width: 100%; max-width: 300px; display: block; margin: 0 auto; border-radius: 12px; }
+    .reproductor[hidden], .miniaturas[hidden] { display: none; }
+    .programar { margin-top: 14px; border: 1px solid var(--linea); border-radius: 12px; padding: 10px 12px; }
+    .programar summary { font-weight: 700; cursor: pointer; }
+    .programar label { display: block; margin: 10px 0; font-weight: 600; }
+    .programar input, .programar textarea { display: block; width: 100%; box-sizing: border-box; margin-top: 4px; font: inherit; padding: 8px; border-radius: 8px; border: 1px solid var(--linea); background: var(--fondo); color: var(--texto); }
+    .estado-ig { margin: 12px 0 6px; }
+    .hora-sugerida { display: inline-block; margin: 0 0 10px; padding: 6px 12px; border-radius: 999px; background: var(--marca); color: var(--tarjeta); font-weight: 700; }
+    .contenido-md blockquote { margin: 6px 0; padding: 8px 12px; border-left: 4px solid var(--marca); background: var(--fondo); border-radius: 8px; }
+    .contenido-md blockquote p { margin: 0; }
+    .crear-pub { padding: 6px 12px; font-size: 14px; margin: 6px 0 4px; }
+    .copiar-sugerencia { padding: 6px 12px; font-size: 14px; margin: 0 0 8px; }
+    .ayuda-encuesta { color: var(--suave); font-size: 14px; padding-left: 18px; }
+  </style>
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">
+      <span class="marca-icono" aria-hidden="true">🛠️</span>
+      <div>
+        <h1>Panel</h1>
+        <p class="lema">Lo que preparan los agentes de Che, Clima. Solo para administradores.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="panel">
+    <section class="tarjeta"><p class="cargando">Cargando…</p></section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+  <script src="meteo.js?v=cielo1"></script>
+  <script src="placas.js?v=3"></script>
+  <script src="panel.js?v=11"></script>
+</body>
+</html>

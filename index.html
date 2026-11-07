@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Che, Clima — pronóstico para Argentina</title>
+  <meta name="description" content="Meteo te dice si llueve, y te muestra cuánto acertamos. Pronóstico combinado y corregido de 7 modelos para CABA, GBA y las principales ciudades de Argentina.">
+  <meta name="theme-color" content="#1f5fbf">
+  <link rel="icon" type="image/png" href="icono-64.png">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <link rel="stylesheet" href="estilos.css?v=columnas1">
+</head>
+<body class="portada">
+  <header class="cabecera">
+    <nav class="menu" aria-label="Secciones">
+      <a href="./" aria-current="page">Pronóstico</a>
+      <a href="radar.html">Radar</a>
+      <a href="tormentas.html">Tormentas</a>
+      <a href="aciertos.html">¿Cuánto acertamos?</a>
+    </nav>
+    <div class="marca">
+      <div class="marca-meteo" id="marca-meteo" aria-hidden="true"></div>
+      <div>
+        <h1>Che, Clima</h1>
+        <p class="lema">Meteo te dice si llueve, y te muestra cuánto acertamos.</p>
+      </div>
+    </div>
+    <nav class="ciudades" id="ciudades" aria-label="Elegir zona"></nav>
+  </header>
+
+  <main id="contenido" class="dos-columnas">
+    <p class="cargando">Cargando el pronóstico…</p>
+  </main>
+
+  <footer class="pie">
+    <p class="aviso-legal"><strong>Información complementaria.</strong> Ante emergencias, seguí las alertas oficiales del
+      <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">SMN</a> y de Defensa Civil.</p>
+    <p id="actualizado" class="actualizado"></p>
+    <p class="actualizado"><a href="soporte.html">Ayuda</a> · <a href="privacidad.html">Privacidad</a> · <a href="mailto:hola@checlima.com.ar">hola@checlima.com.ar</a></p>
+    <p class="fuentes">
+      Pronóstico: combinación propia de modelos vía <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0).
+      Observaciones: METAR de <a href="https://aviationweather.gov/" target="_blank" rel="noopener">NOAA Aviation Weather Center</a>.
+      Aciertos medidos con datos del <a href="https://www.smn.gob.ar/" target="_blank" rel="noopener">SMN</a> (CC BY 4.0) y de la
+      <a href="https://mesonet.agron.iastate.edu/" target="_blank" rel="noopener">Universidad Estatal de Iowa</a>.
+      Tu ubicación se usa solo en tu navegador para pedir el pronóstico de ese punto: no la guardamos.
+      Proyecto sin fines de lucro.
+    </p>
+  </footer>
+
+  <script src="meteo.js?v=cielo1"></script>
+  <script src="escena.js?v=cielo1"></script>
+  <script src="app.js?v=noticias1"></script>
+</body>
+</html>
