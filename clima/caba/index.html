@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clima en CABA hoy: ¿llueve? Pronóstico extendido | Che, Clima</title>
+  <meta name="description" content="Hoy en CABA: máxima de 28° y mínima de 21°, sin lluvia. Pronóstico de 7 días combinando 7 modelos, y cuánto acertamos: 26 de 30 días.">
+  <link rel="canonical" href="https://checlima.com.ar/clima/caba/">
+  <meta property="og:title" content="Clima en CABA — Che, Clima">
+  <meta property="og:description" content="Hoy en CABA: máxima de 28° y mínima de 21°, sin lluvia. Pronóstico de 7 días combinando 7 modelos, y cuánto acertamos: 26 de 30 días.">
+  <meta property="og:url" content="https://checlima.com.ar/clima/caba/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:image" content="https://checlima.com.ar/icono-180.png">
+  <meta name="theme-color" content="#1f5fbf">
+  <link rel="icon" type="image/png" href="../../icono-64.png">
+  <link rel="apple-touch-icon" href="../../icono-180.png">
+  <link rel="stylesheet" href="../../estilos.css?v=columnas1">
+  <style>
+    .ciudad-hoy { display: flex; gap: 14px; align-items: center; }
+    .ciudad-hoy .meteo-lugar { flex: 0 0 auto; }
+    .respuesta-chica { font-size: 28px; font-weight: 700; margin: 0; }
+    .respuesta-chica.si { color: var(--si); } .respuesta-chica.dudas { color: var(--dudas); } .respuesta-chica.no { color: var(--no); }
+    .tabla-dias { width: 100%; border-collapse: collapse; font-size: 15px; }
+    .tabla-dias th, .tabla-dias td { text-align: left; padding: 8px 4px; border-top: 1px solid var(--linea); }
+    .tabla-dias thead th { border-top: 0; color: var(--suave); font-size: 13px; font-weight: 600; }
+    .tabla-dias td.si { color: var(--si); font-weight: 600; } .tabla-dias td.dudas { color: var(--dudas); font-weight: 600; } .tabla-dias td.no { color: var(--no); }
+    .suave { color: var(--suave); font-weight: 400; }
+    .lista { margin: 0; padding-left: 18px; } .lista li { margin: 4px 0; }
+    .seguir a { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="cabecera">
+    <nav class="menu" aria-label="Secciones">
+      <a href="../../#caba">Pronóstico</a>
+      <a href="../../radar.html">Radar</a>
+      <a href="../../tormentas.html">Tormentas</a>
+      <a href="../../aciertos.html">¿Cuánto acertamos?</a>
+    </nav>
+    <h1>Clima en CABA</h1>
+    <p class="lema">Pronóstico de hoy y de los próximos 7 días. Actualizado el sábado 14/11, 19:33 h.</p>
+  </header>
+
+  <main>
+    
+    <section class="tarjeta">
+      <h2>¿Llevo paraguas hoy en CABA?</h2>
+      <div class="ciudad-hoy">
+        <div class="meteo-lugar" id="meteo" data-situacion="ya_paro" data-seria="" data-noche="" aria-hidden="true"></div>
+        <div>
+          <p class="respuesta-chica no">😎 No</p>
+          <p>La lluvia ya pasó. Si te mojaste temprano, a la tarde te secás. Máxima de 28°, para andar liviano. Ojo con el sol: índice UV 9, protector entre las 11 y las 16.</p>
+        </div>
+      </div>
+      <p class="suave">Máxima 28° · mínima 21° · sensación de 30° · ráfagas de 27 km/h · UV 9. Ahora en Aeroparque: <strong>23°</strong>, algunas nubes.</p>
+    </section>
+
+    <section class="tarjeta"><h2>¿Llueve el fin de semana en CABA?</h2><ul class="lista"><li><strong>Hoy 14/11:</strong> Sin lluvia, de 21° a 28°.</li><li><strong>Mañana 15/11:</strong> Sin lluvia, de 19° a 26°.</li></ul></section>
+
+    <section class="tarjeta">
+      <h2>Pronóstico extendido para CABA</h2>
+      <table class="tabla-dias">
+        <thead><tr><th scope="col">Día</th><th scope="col">Máx / mín</th><th scope="col">Lluvia</th><th scope="col">¿Paraguas?</th></tr></thead>
+        <tbody>
+<tr><th scope="row">Hoy <span class="suave">14/11</span></th><td>28° / 21°</td><td>14%</td><td class="no">No</td></tr>
+<tr><th scope="row">Mañana <span class="suave">15/11</span></th><td>26° / 19°</td><td>14%</td><td class="no">No</td></tr>
+<tr><th scope="row">Lunes <span class="suave">16/11</span></th><td>27° / 21°</td><td>0%</td><td class="no">No</td></tr>
+<tr><th scope="row">Martes <span class="suave">17/11</span></th><td>28° / 20°</td><td>86%</td><td class="si">Sí</td></tr>
+<tr><th scope="row">Miércoles <span class="suave">18/11</span></th><td>28° / 19°</td><td>71%</td><td class="si">Sí</td></tr>
+<tr><th scope="row">Jueves <span class="suave">19/11</span></th><td>27° / 18°</td><td>83%</td><td class="si">Sí</td></tr>
+<tr><th scope="row">Viernes <span class="suave">20/11</span></th><td>25° / 17°</td><td>100%</td><td class="si">Sí</td></tr>
+        </tbody>
+      </table>
+      <p class="suave">La lluvia es el porcentaje de los 7 modelos que dan lluvia ese día. <a href="../../#caba">Ver hora por hora</a></p>
+    </section>
+
+    <section class="tarjeta"><h2>¿Cuánto acertamos en CABA?</h2><p>En los últimos 30 días acertamos si llovía o no <strong>26 de 30 días</strong>. En la máxima nos equivocamos 1,0° en promedio, y en la mínima, 0,6°. Lo medimos todos los días contra lo que pasó de verdad, también cuando le erramos.</p><p><a href="../../aciertos.html">Ver la comparación con cada modelo</a></p></section>
+
+    <section class="tarjeta seguir">
+      <h2>Meteo todos los días</h2>
+      <p>El pronóstico de cada día, con Meteo, en Instagram <a href="https://www.instagram.com/che.clima/" target="_blank" rel="noopener">@che.clima</a>
+        y en TikTok <a href="https://www.tiktok.com/@che.clima.pronost" target="_blank" rel="noopener">@che.clima.pronost</a>.</p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Clima en otras ciudades</h2>
+      <p><a href="../gba-norte/">GBA Norte</a> · <a href="../gba-sur-oeste/">GBA Sur y Oeste</a> · <a href="../la-plata/">La Plata</a> · <a href="../cordoba/">Córdoba</a> · <a href="../rosario/">Rosario</a> · <a href="../mendoza/">Mendoza</a> · <a href="../tucuman/">Tucumán</a> · <a href="../mar-del-plata/">Mar del Plata</a></p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="aviso-legal"><strong>Información complementaria.</strong> Ante emergencias, seguí las alertas oficiales del
+      <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">SMN</a> y de Defensa Civil.</p>
+    <p class="actualizado"><a href="../../">Che, Clima</a> · <a href="../../soporte.html">Ayuda</a> · <a href="../../privacidad.html">Privacidad</a> · <a href="mailto:hola@checlima.com.ar">hola@checlima.com.ar</a></p>
+    <p class="fuentes">Pronóstico: combinación propia de modelos vía <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0).
+      Aciertos medidos con datos del <a href="https://www.smn.gob.ar/" target="_blank" rel="noopener">SMN</a> (CC BY 4.0). Proyecto sin fines de lucro.</p>
+  </footer>
+
+  <script src="../../meteo.js?v=cielo1"></script>
+  <script>
+    (function () {
+      var lugar = document.getElementById("meteo");
+      if (!lugar || typeof meteoHTML !== "function") return;
+      var d = lugar.dataset;
+      lugar.innerHTML = meteoHTML(animoDe(d.situacion, !!d.seria, !!d.noche), 96);
+    })();
+  </script>
+</body>
+</html>
