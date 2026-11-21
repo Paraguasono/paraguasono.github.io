@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Conectar Instagram — Che, Clima</title>
+  <link rel="icon" type="image/png" href="icono-64.png">
+  <link rel="stylesheet" href="estilos.css?v=panel1">
+  <style>
+    main { max-width: 640px; margin: 0 auto; padding: 0 16px 40px; }
+    textarea { width: 100%; box-sizing: border-box; min-height: 170px; font: 13px/1.4 ui-monospace, Menlo, monospace;
+               padding: 10px; border-radius: 10px; border: 1px solid var(--linea); background: var(--fondo); color: var(--texto); }
+    .boton { border: 0; border-radius: 12px; padding: 12px 18px; font-weight: 700; background: var(--marca); color: var(--tarjeta);
+             cursor: pointer; font-size: 16px; width: 100%; margin-top: 10px; }
+    ol li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <!--
+    Página de vuelta de Instagram (agente 4 y comentarios).
+    Instagram trae acá un "código" de un solo uso, que vence en 1 hora y que sin la
+    clave secreta de la app no sirve para nada. Esta página solo lo muestra dentro de un
+    SQL listo para pegar en Supabase; el programa del servidor lo cambia por la llave.
+    No está enlazada desde ningún lado y les pide a los buscadores que no la muestren.
+  -->
+  <main>
+    <header class="cabecera"><div class="marca"><span class="marca-icono" aria-hidden="true">☄️</span>
+      <div><h1>Conectar Instagram</h1><p class="lema">Che, Clima · solo para administradores</p></div></div></header>
+    <section class="tarjeta" id="caja"><p>Cargando…</p></section>
+  </main>
+  <script>
+    const caja = document.getElementById("caja");
+    const datos = new URLSearchParams(location.search);
+    const codigo = (datos.get("code") || "").replace(/#_$/, "").trim();
+    const seguro = t => String(t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    if (datos.get("error")) {
+      caja.innerHTML = `<h2>No se conectó</h2><p>Instagram dijo: ${seguro(datos.get("error_description") || datos.get("error"))}.</p>
+        <p>Podés volver a intentarlo con el enlace de autorización.</p>`;
+    } else if (!/^[A-Za-z0-9_\-]{20,}$/.test(codigo)) {
+      caja.innerHTML = `<h2>Falta el código</h2><p>Esta página se abre sola después de tocar "Permitir" en Instagram.</p>`;
+    } else {
+      const sql = `-- Conectar Instagram (@che.clima). Pegalo en Supabase → SQL Editor y tocá Run.
+insert into public.credenciales_redes (red, cuenta_id, token, vence)
+values ('instagram', 'pendiente', 'CODIGO:${codigo}', null)
+on conflict (red) do update set cuenta_id = excluded.cuenta_id, token = excluded.token,
+  vence = null, actualizada = now();`;
+      caja.innerHTML = `<h2>✅ Instagram dio permiso</h2>
+        <ol>
+          <li>Tocá <b>Copiar</b>.</li>
+          <li>Abrí <b>Supabase → proyecto paraguasono → SQL Editor → New query</b>, pegá y tocá <b>Run</b>.</li>
+          <li>Listo: en menos de 30 minutos el programa lo cambia por la llave de Instagram y te avisa al celular <b>"✅ Instagram conectado"</b>.</li>
+        </ol>
+        <p class="vacio">Hacelo dentro de la próxima hora: el código vence. Sirve una sola vez.</p>
+        <textarea id="sql" readonly>${seguro(sql)}</textarea>
+        <button class="boton" id="copiar">📋 Copiar</button>`;
+      document.getElementById("copiar").addEventListener("click", async e => {
+        const t = document.getElementById("sql");
+        try { await navigator.clipboard.writeText(t.value); } catch (err) { t.select(); document.execCommand("copy"); }
+        e.target.textContent = "✔ Copiado";
+      });
+      history.replaceState(null, "", location.pathname); // saca el código de la barra de direcciones
+    }
+  </script>
+</body>
+</html>

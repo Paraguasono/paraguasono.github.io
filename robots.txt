@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /panel.html
+Disallow: /instagram.html
+Disallow: /volver.html
+
+Sitemap: https://checlima.com.ar/sitemap.xml

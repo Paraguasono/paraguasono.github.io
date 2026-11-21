@@ -1,0 +1,198 @@
+{
+ "calculado": "2026-11-21T06:20",
+ "dias": 90,
+ "desde": "2026-08-23",
+ "regla_actual": {
+  "modelos_que_deben_coincidir": 2,
+  "cape_para_senal_de_tormenta": 500,
+  "aciertos": 54,
+  "se_escaparon": 113,
+  "falsas_alarmas": 43,
+  "tramos": 3276,
+  "detectadas": 32,
+  "falsas": 44,
+  "puntaje": 26
+ },
+ "por_ciudad": {
+  "caba": {
+   "nombre": "CABA",
+   "aciertos": 10,
+   "se_escaparon": 13,
+   "falsas_alarmas": 5,
+   "tramos": 364,
+   "detectadas": 43,
+   "falsas": 33,
+   "puntaje": 36
+  },
+  "gba-norte": {
+   "nombre": "GBA Norte",
+   "aciertos": 6,
+   "se_escaparon": 9,
+   "falsas_alarmas": 9,
+   "tramos": 364,
+   "detectadas": 40,
+   "falsas": 60,
+   "puntaje": 25
+  },
+  "gba-sur-oeste": {
+   "nombre": "GBA Sur y Oeste",
+   "aciertos": 7,
+   "se_escaparon": 18,
+   "falsas_alarmas": 4,
+   "tramos": 364,
+   "detectadas": 28,
+   "falsas": 36,
+   "puntaje": 24
+  },
+  "la-plata": {
+   "nombre": "La Plata",
+   "aciertos": 5,
+   "se_escaparon": 13,
+   "falsas_alarmas": 5,
+   "tramos": 364,
+   "detectadas": 28,
+   "falsas": 50,
+   "puntaje": 22
+  },
+  "cordoba": {
+   "nombre": "Córdoba",
+   "aciertos": 6,
+   "se_escaparon": 20,
+   "falsas_alarmas": 5,
+   "tramos": 364,
+   "detectadas": 23,
+   "falsas": 45,
+   "puntaje": 19
+  },
+  "rosario": {
+   "nombre": "Rosario",
+   "aciertos": 12,
+   "se_escaparon": 19,
+   "falsas_alarmas": 4,
+   "tramos": 364,
+   "detectadas": 39,
+   "falsas": 25,
+   "puntaje": 34
+  },
+  "mendoza": {
+   "nombre": "Mendoza",
+   "aciertos": 2,
+   "se_escaparon": 14,
+   "falsas_alarmas": 3,
+   "tramos": 364,
+   "detectadas": 12,
+   "falsas": 60,
+   "puntaje": 11
+  },
+  "tucuman": {
+   "nombre": "Tucumán",
+   "aciertos": 4,
+   "se_escaparon": 1,
+   "falsas_alarmas": 6,
+   "tramos": 364,
+   "detectadas": 80,
+   "falsas": 60,
+   "puntaje": 36
+  },
+  "mar-del-plata": {
+   "nombre": "Mar del Plata",
+   "aciertos": 2,
+   "se_escaparon": 6,
+   "falsas_alarmas": 2,
+   "tramos": 364,
+   "detectadas": 25,
+   "falsas": 50,
+   "puntaje": 20
+  }
+ },
+ "alternativas": [
+  {
+   "modelos_que_deben_coincidir": 2,
+   "cape_para_senal_de_tormenta": 1000,
+   "aciertos": 31,
+   "se_escaparon": 136,
+   "falsas_alarmas": 20,
+   "tramos": 3276,
+   "detectadas": 19,
+   "falsas": 39,
+   "puntaje": 17
+  },
+  {
+   "modelos_que_deben_coincidir": 2,
+   "cape_para_senal_de_tormenta": 1500,
+   "aciertos": 23,
+   "se_escaparon": 144,
+   "falsas_alarmas": 13,
+   "tramos": 3276,
+   "detectadas": 14,
+   "falsas": 36,
+   "puntaje": 13
+  },
+  {
+   "modelos_que_deben_coincidir": 3,
+   "cape_para_senal_de_tormenta": 500,
+   "aciertos": 23,
+   "se_escaparon": 144,
+   "falsas_alarmas": 7,
+   "tramos": 3276,
+   "detectadas": 14,
+   "falsas": 23,
+   "puntaje": 13
+  },
+  {
+   "modelos_que_deben_coincidir": 3,
+   "cape_para_senal_de_tormenta": 1000,
+   "aciertos": 13,
+   "se_escaparon": 154,
+   "falsas_alarmas": 2,
+   "tramos": 3276,
+   "detectadas": 8,
+   "falsas": 13,
+   "puntaje": 8
+  },
+  {
+   "modelos_que_deben_coincidir": 3,
+   "cape_para_senal_de_tormenta": 1500,
+   "aciertos": 10,
+   "se_escaparon": 157,
+   "falsas_alarmas": 0,
+   "tramos": 3276,
+   "detectadas": 6,
+   "falsas": 0,
+   "puntaje": 6
+  },
+  {
+   "modelos_que_deben_coincidir": 4,
+   "cape_para_senal_de_tormenta": 500,
+   "aciertos": 7,
+   "se_escaparon": 160,
+   "falsas_alarmas": 1,
+   "tramos": 3276,
+   "detectadas": 4,
+   "falsas": 12,
+   "puntaje": 4
+  },
+  {
+   "modelos_que_deben_coincidir": 4,
+   "cape_para_senal_de_tormenta": 1000,
+   "aciertos": 3,
+   "se_escaparon": 164,
+   "falsas_alarmas": 0,
+   "tramos": 3276,
+   "detectadas": 2,
+   "falsas": 0,
+   "puntaje": 2
+  },
+  {
+   "modelos_que_deben_coincidir": 4,
+   "cape_para_senal_de_tormenta": 1500,
+   "aciertos": 1,
+   "se_escaparon": 166,
+   "falsas_alarmas": 0,
+   "tramos": 3276,
+   "detectadas": 1,
+   "falsas": 0,
+   "puntaje": 1
+  }
+ ]
+}

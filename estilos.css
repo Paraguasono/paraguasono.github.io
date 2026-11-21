@@ -1,0 +1,422 @@
+/* Paraguas o No — estilos. Pensado primero para celular. */
+
+:root {
+  --fondo: #eef3fa;
+  --tarjeta: #ffffff;
+  --texto: #14213d;
+  --suave: #5b6b85;
+  --linea: #dbe3ef;
+  --marca: #1f5fbf;
+  --si: #1f5fbf;
+  --si-fondo: #e3edfc;
+  --dudas: #9a6400;
+  --dudas-fondo: #fdf1d8;
+  --no: #1d7a46;
+  --no-fondo: #e2f4e9;
+  --serio: #b42318;
+  --serio-fondo: #fde8e6;
+  --barra: #6aa0ee;
+  --sombra: 0 1px 2px rgba(20, 33, 61, .06), 0 4px 16px rgba(20, 33, 61, .06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #0d1424;
+    --tarjeta: #162036;
+    --texto: #e8eefb;
+    --suave: #9aa9c4;
+    --linea: #26324d;
+    --marca: #7fb0ff;
+    --si: #8fbaff;
+    --si-fondo: #1c2d50;
+    --dudas: #f4c46a;
+    --dudas-fondo: #3a2e14;
+    --no: #6fd39b;
+    --no-fondo: #15342a;
+    --serio: #ff8a80;
+    --serio-fondo: #3d1a1a;
+    --barra: #4f86d8;
+    --sombra: none;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+a { color: var(--marca); }
+
+.cabecera, main, .pie {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* --- Cabecera --- */
+.cabecera { padding-top: 20px; }
+.marca { display: flex; gap: 12px; align-items: center; }
+.marca-icono { font-size: 34px; line-height: 1; }
+h1 { margin: 0; font-size: 22px; letter-spacing: -.01em; }
+.lema { margin: 2px 0 0; color: var(--suave); font-size: 14px; }
+
+.ciudades {
+  display: flex;
+  gap: 6px;
+  margin: 16px 0 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.ciudades::-webkit-scrollbar { display: none; }
+.ciudades button {
+  flex: 0 0 auto;
+  border: 1px solid var(--linea);
+  background: var(--tarjeta);
+  color: var(--texto);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+.ciudades button[aria-pressed="true"] {
+  background: var(--marca);
+  border-color: var(--marca);
+  color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  .ciudades button[aria-pressed="true"] { color: #0d1424; }
+}
+
+/* --- Tarjetas --- */
+.tarjeta {
+  background: var(--tarjeta);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 12px;
+  box-shadow: var(--sombra);
+}
+.tarjeta h2 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--suave);
+}
+
+/* --- Respuesta principal --- */
+.principal .cuando { margin: 0; color: var(--suave); font-size: 15px; }
+.respuesta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 12px;
+  padding: 8px 16px 8px 12px;
+  border-radius: 14px;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+.respuesta .icono { font-size: 34px; }
+.respuesta.si { background: var(--si-fondo); color: var(--si); }
+.respuesta.dudas { background: var(--dudas-fondo); color: var(--dudas); }
+.respuesta.no { background: var(--no-fondo); color: var(--no); }
+
+.frase { font-size: 19px; line-height: 1.4; margin: 0 0 14px; }
+.frase.seria {
+  background: var(--serio-fondo);
+  color: var(--serio);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0;
+}
+.dato { background: var(--fondo); border-radius: 12px; padding: 10px; }
+.dato dt { font-size: 12px; color: var(--suave); }
+.dato dd { margin: 2px 0 0; font-size: 20px; font-weight: 700; }
+.dato dd small { font-size: 13px; font-weight: 500; color: var(--suave); }
+
+.explicacion { margin: 12px 0 0; font-size: 14px; color: var(--suave); }
+
+/* --- Ahora --- */
+.ahora { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.ahora .temp { font-size: 30px; font-weight: 800; }
+.ahora .tiempo { font-size: 17px; }
+.ahora .detalle { width: 100%; font-size: 14px; color: var(--suave); margin: 0; }
+
+/* --- Próximas horas --- */
+.horas {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+.hora {
+  flex: 0 0 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  gap: 4px;
+}
+.hora .h { color: var(--suave); }
+.hora .t { font-weight: 700; font-size: 15px; }
+.hora .barra-caja {
+  width: 14px;
+  height: 56px;
+  background: var(--fondo);
+  border-radius: 7px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.hora .barra { width: 100%; background: var(--barra); border-radius: 7px; }
+.hora .p { color: var(--suave); font-size: 12px; }
+.leyenda { margin: 8px 0 0; font-size: 12px; color: var(--suave); }
+
+/* --- Próximos días --- */
+.dias { list-style: none; margin: 0; padding: 0; }
+.dia {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--linea);
+}
+.dia:first-child { border-top: 0; padding-top: 0; }
+.dia .nombre { font-weight: 600; text-transform: capitalize; }
+.dia .sub { display: block; font-size: 13px; font-weight: 400; color: var(--suave); text-transform: none; }
+.dia .icono { font-size: 24px; }
+.dia .temps { font-weight: 700; min-width: 64px; text-align: right; }
+.dia .temps span { color: var(--suave); font-weight: 500; }
+
+/* --- Cada modelo --- */
+details summary { cursor: pointer; font-weight: 600; }
+.tabla-modelos { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+.tabla-modelos th, .tabla-modelos td { padding: 6px 4px; text-align: right; border-top: 1px solid var(--linea); }
+.tabla-modelos th:first-child, .tabla-modelos td:first-child { text-align: left; }
+.tabla-modelos thead th { color: var(--suave); font-weight: 500; border-top: 0; }
+.tabla-modelos tr.combinado td { font-weight: 700; }
+
+/* --- Pie --- */
+.pie { padding-bottom: 32px; font-size: 13px; color: var(--suave); }
+.aviso-legal {
+  background: var(--tarjeta);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: var(--texto);
+}
+.cargando, .error { text-align: center; color: var(--suave); padding: 40px 0; }
+.viejo { background: var(--dudas-fondo); color: var(--dudas); border-radius: 12px; padding: 10px 14px; font-size: 14px; }
+
+/* --- Página "¿Cuánto acertamos?" --- */
+.volver { display: inline-block; margin-bottom: 10px; font-size: 14px; text-decoration: none; }
+.periodos { display: flex; gap: 6px; margin: 0 0 12px; }
+.periodos button {
+  flex: 1;
+  border: 1px solid var(--linea);
+  background: var(--tarjeta);
+  color: var(--texto);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.periodos button[aria-pressed="true"] { border-color: var(--marca); color: var(--marca); font-weight: 700; }
+.titular { font-size: 22px; line-height: 1.3; margin: 4px 0 8px; }
+.titular strong { color: var(--marca); }
+.puestos { display: flex; flex-wrap: wrap; gap: 6px; }
+.puesto { background: var(--fondo); border-radius: 999px; padding: 4px 10px; font-size: 13px; }
+.puesto.primero { background: var(--no-fondo); color: var(--no); font-weight: 700; }
+.tabla-scroll { overflow-x: auto; }
+.tabla-modelos td.mejor { color: var(--no); font-weight: 700; }
+.tabla-modelos tr.combinado td { background: var(--si-fondo); }
+.dias-medidos { list-style: none; margin: 0; padding: 0; }
+.dia-medido { display: flex; flex-direction: column; gap: 2px; padding: 10px 0; border-top: 1px solid var(--linea); font-size: 14px; }
+.dia-medido:first-child { border-top: 0; padding-top: 0; }
+.dia-medido .fecha { font-weight: 600; text-transform: capitalize; }
+.dia-medido .fecha small { margin-left: 8px; font-weight: 400; font-size: 11px; color: var(--suave); text-transform: none;
+  border: 1px solid var(--linea); border-radius: 999px; padding: 1px 6px; }
+.dia-medido .ok { color: var(--no); font-weight: 800; }
+.dia-medido .mal { color: var(--serio); font-weight: 800; }
+.dia-medido .nd { color: var(--suave); }
+.tabla-pesos td.peso { display: flex; align-items: center; gap: 6px; justify-content: flex-end; }
+.barra-peso { display: inline-block; height: 8px; max-width: 80px; background: var(--barra); border-radius: 4px; }
+.como ul { margin: 0; padding-left: 18px; color: var(--texto); }
+.como li { margin-bottom: 6px; }
+.resumen-aciertos .titular { font-size: 18px; }
+.ver-mas { display: inline-block; margin-top: 10px; font-weight: 600; text-decoration: none; }
+
+/* --- Menú común --- */
+.menu { display: flex; gap: 4px; margin: 0 0 14px; overflow-x: auto; scrollbar-width: none; }
+.menu::-webkit-scrollbar { display: none; }
+.menu a {
+  flex: 0 0 auto;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--suave);
+}
+.menu a[aria-current="page"] { background: var(--tarjeta); color: var(--texto); font-weight: 600; box-shadow: var(--sombra); }
+
+/* --- Tormentas --- */
+:root { --amarilla: #8a6300; --amarilla-fondo: #fff4cc; --naranja: #a8460b; --naranja-fondo: #ffe6d5; --roja: #b42318; --roja-fondo: #fde8e6; }
+@media (prefers-color-scheme: dark) {
+  :root { --amarilla: #f6cf5a; --amarilla-fondo: #3b3010; --naranja: #ffad73; --naranja-fondo: #40230f; --roja: #ff8a80; --roja-fondo: #3d1a1a; }
+}
+.satelite { display: block; width: 100%; height: auto; border-radius: 12px; background: var(--fondo); }
+.boton {
+  border: 1px solid var(--linea); background: var(--fondo); color: var(--texto);
+  border-radius: 10px; padding: 8px 12px; font: inherit; font-size: 14px; cursor: pointer;
+}
+.estados { list-style: none; margin: 0; padding: 0; }
+.estado-ciudad { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px;
+  padding: 10px 0; border-top: 1px solid var(--linea); }
+.estado-ciudad:first-child { border-top: 0; padding-top: 0; }
+.estado-ciudad .nombre { font-weight: 600; }
+.estado-ciudad.con-alerta { flex-direction: column; align-items: stretch; }
+.chip-estado { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 13px; font-weight: 700; }
+.chip-estado.tranqui { background: var(--no-fondo); color: var(--no); }
+.chip-estado.amarilla { background: var(--amarilla-fondo); color: var(--amarilla); }
+.chip-estado.naranja { background: var(--naranja-fondo); color: var(--naranja); }
+.chip-estado.roja { background: var(--roja-fondo); color: var(--roja); }
+.alerta-smn { font-size: 14px; }
+.alerta-smn summary { cursor: pointer; font-weight: 500; }
+.alerta-smn p { margin: 8px 0 0; }
+.aviso-propio { margin: 4px 0 0; font-size: 14px; }
+.aviso-propio small { color: var(--suave); }
+
+/* --- Aviso destacado en la portada --- */
+.banner-alerta { border-radius: 12px; padding: 10px 12px; margin: 8px 0 4px; font-size: 14px; }
+.banner-alerta.amarilla { background: var(--amarilla-fondo); color: var(--amarilla); }
+.banner-alerta.naranja { background: var(--naranja-fondo); color: var(--naranja); }
+.banner-alerta.roja { background: var(--roja-fondo); color: var(--roja); }
+.banner-alerta strong { display: block; font-size: 15px; }
+.banner-alerta a { color: inherit; font-weight: 700; }
+
+/* --- Meteo, el asistente (dibujo en meteo.js) --- */
+.meteo { position: relative; flex: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.meteo-dentro { position: absolute; inset: 0; animation: meteo-flota 2.6s ease-in-out infinite alternate; }
+.meteo-serio .meteo-dentro { animation: meteo-flota-quieto 3.6s ease-in-out infinite alternate; }
+.meteo svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.meteo-estela { transform-origin: 44% 44%; animation: meteo-fuego .28s ease-in-out infinite alternate; }
+.meteo-ojo { transform-box: fill-box; transform-origin: center; animation: meteo-parpadeo 4.3s infinite; }
+.meteo-frio .meteo-cuerpo { animation: meteo-tirita .14s linear infinite; }
+.meteo-salta { animation: meteo-salto .55s ease-out; }
+@keyframes meteo-flota { from { transform: translateY(4px) rotate(-3deg); } to { transform: translateY(-4px) rotate(3deg); } }
+@keyframes meteo-flota-quieto { from { transform: translateY(3px); } to { transform: translateY(-3px); } }
+@keyframes meteo-fuego { from { transform: scale(.94); opacity: .85; } to { transform: scale(1.04); opacity: 1; } }
+@keyframes meteo-parpadeo { 0%, 93%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+@keyframes meteo-tirita { 0%, 100% { transform: translateX(-1.2px); } 50% { transform: translateX(1.2px); } }
+@keyframes meteo-salto { 0%, 100% { transform: translateY(0); } 30% { transform: translateY(-18px); } 62% { transform: translateY(0); } 80% { transform: translateY(-5px); } }
+/* Con "reducir movimiento" activado, Meteo se queda quieto (solo parpadea) */
+@media (prefers-reduced-motion: reduce) {
+  .meteo-dentro, .meteo-estela, .meteo-cuerpo, .meteo-salta { animation: none !important; }
+}
+
+/* Meteo y su globito con la frase del día */
+.meteo-fila { display: flex; align-items: center; gap: 12px; margin: 14px 0 4px; }
+.globo { position: relative; flex: 1; margin: 0; background: var(--fondo); border-radius: 16px; padding: 12px 14px; font-size: 18px; line-height: 1.4; }
+.globo::before { content: ""; position: absolute; left: -7px; top: 50%; width: 16px; height: 16px; background: inherit; border-radius: 3px; transform: translateY(-50%) rotate(45deg); }
+.globo.seria { background: var(--serio-fondo); color: var(--serio); font-weight: 600; }
+.marca-meteo { flex: none; }
+
+/* Texto solo para lectores de pantalla */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* --- Cielo animado (dibujo en escena.js; igual al de la app) --- */
+.cielo { position: relative; height: 150px; border-radius: 14px; overflow: hidden; margin-top: 10px; background: var(--cielo); }
+.cielo-fondo { position: absolute; inset: 0; }
+.cielo-despejado { --cielo: #bcdcff; }
+.cielo-gris { --cielo: #c9d6ea; }
+.cielo-noche { --cielo: #23345f; }
+.cielo-tormenta { --cielo: #5d6b85; }
+.nubes-clara { --nube: #ffffff; }
+.nubes-gris { --nube: #f4f7fb; }
+.nubes-tormenta { --nube: #8592aa; }
+.cielo { --gota: #2f6fd0; }
+@media (prefers-color-scheme: dark) {
+  .cielo-despejado { --cielo: #17305c; }
+  .cielo-gris { --cielo: #1d2840; }
+  .cielo-noche { --cielo: #0b1430; }
+  .cielo-tormenta { --cielo: #141b2b; }
+  .nubes-clara { --nube: #7d8aa6; }
+  .nubes-gris { --nube: #55627d; }
+  .nubes-tormenta { --nube: #3b465e; }
+  .cielo { --gota: #7fb0ff; }
+}
+.cielo .meteo { position: absolute; left: 6px; bottom: 2px; }
+
+.sol { position: absolute; left: calc(78% - 54px); top: -10px; width: 108px; height: 108px; }
+.sol-rayos { position: absolute; inset: 0; animation: cielo-gira 24s linear infinite; }
+.sol-rayos i { position: absolute; left: 52px; top: 47px; width: 4px; height: 14px; border-radius: 2px; background: #f8c54a; }
+.sol-centro { position: absolute; left: 27px; top: 27px; width: 54px; height: 54px; border-radius: 50%; background: #f8c54a; animation: cielo-pulso 2.6s ease-in-out infinite alternate; }
+.luna { position: absolute; left: calc(78% - 24px); top: 18px; width: 46px; height: 46px; border-radius: 50%; background: #f1f4fb; overflow: hidden; }
+.luna-sombra { position: absolute; left: 14px; top: -6px; width: 40px; height: 40px; border-radius: 50%; background: var(--cielo); }
+.estrella { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #fff; animation: cielo-titila 1.8s ease-in-out infinite alternate; }
+
+.nube-viaje { position: absolute; left: 0; width: 100%; animation: cielo-nube linear infinite; }
+.nube { position: absolute; left: -96px; display: block; width: calc(var(--e) * 96px); height: calc(var(--e) * 44px); }
+.nube i { position: absolute; background: var(--nube); border-radius: 999px; }
+.nube .b1 { width: calc(var(--e) * 40px); height: calc(var(--e) * 40px); left: calc(var(--e) * 14px); top: calc(var(--e) * 4px); }
+.nube .b2 { width: calc(var(--e) * 52px); height: calc(var(--e) * 52px); left: calc(var(--e) * 36px); top: calc(var(--e) * -8px); }
+.nube .b3 { width: calc(var(--e) * 96px); height: calc(var(--e) * 26px); left: 0; top: calc(var(--e) * 18px); }
+
+.gota { position: absolute; top: 0; width: 2.5px; height: 12px; border-radius: 2px; background: var(--gota); animation: cielo-gota .95s linear infinite; }
+.gota.rapida { animation-duration: .65s; }
+.relampago { position: absolute; inset: 0; background: #fff; opacity: 0; animation: cielo-relampago 3.1s linear infinite; }
+
+@keyframes cielo-gira { to { transform: rotate(360deg); } }
+@keyframes cielo-pulso { from { transform: scale(1); } to { transform: scale(1.06); } }
+@keyframes cielo-titila { from { opacity: .25; } to { opacity: 1; } }
+@keyframes cielo-nube { from { transform: translateX(0); } to { transform: translateX(calc(100% + 96px)); } }
+@keyframes cielo-gota { from { transform: translateY(-14px); opacity: 1; } to { transform: translateY(170px); opacity: .6; } }
+@keyframes cielo-relampago { 0%, 83.8% { opacity: 0; } 85.8% { opacity: .85; } 89.7% { opacity: 0; } 91.6% { opacity: .55; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .sol-rayos, .sol-centro, .estrella, .nube-viaje, .gota, .relampago { animation: none !important; }
+  .gota { display: none; }
+}
+
+/* Globito debajo del cielo: la colita apunta arriba, a Meteo */
+.globo.arriba { margin: 12px 0 4px; }
+.globo.arriba::before { left: 46px; top: -7px; transform: rotate(45deg); }
+
+/* Línea 'Próximas 3 horas' */
+.proximas { margin: 12px 0 0; padding: 10px 12px; border-radius: 12px; background: var(--fondo); font-size: 15px; }
+
+/* --- Portada: una columna en el celular, dos en la computadora --- */
+.dos-columnas { display: flex; flex-direction: column; }
+.dos-columnas > .columna { display: contents; }   /* en el celular, las tarjetas van en fila... */
+.dos-columnas .noticias { order: 1; }              /* ...y las noticias al final */
+@media (min-width: 960px) {
+  .portada .cabecera, .portada main, .portada .pie { max-width: 1080px; }
+  .dos-columnas { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 16px; align-items: start; }
+  .dos-columnas > .columna { display: block; }
+  .dos-columnas > :not(.columna) { grid-column: 1 / -1; }   /* avisos y mensajes, a lo ancho */
+  .portada .ciudades { flex-wrap: wrap; }   /* con lugar de sobra, todas las ciudades a la vista */
+}
+
+/* --- Qué dicen los medios --- */
+.lista-noticias { list-style: none; margin: 0; padding: 0; }
+.lista-noticias li { padding: 10px 0; border-top: 1px solid var(--linea); }
+.lista-noticias li:first-child { border-top: 0; padding-top: 0; }
+.lista-noticias a { display: block; color: var(--texto); text-decoration: none; font-weight: 600; line-height: 1.35; }
+.lista-noticias a:hover { text-decoration: underline; }
+.noticia-fuente { display: block; margin-top: 3px; color: var(--suave); font-size: 13px; }
