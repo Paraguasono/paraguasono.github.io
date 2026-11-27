@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayuda y soporte — Che, Clima</title>
+  <meta name="description" content="Preguntas frecuentes de Che, Clima y cómo contactarnos.">
+  <meta name="theme-color" content="#1f5fbf">
+  <link rel="icon" type="image/png" href="icono-64.png">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <link rel="stylesheet" href="estilos.css?v=legal1">
+  <style>
+    .ayuda details { border-top: 1px solid var(--linea); padding: 12px 0; }
+    .ayuda details:first-of-type { border-top: 0; }
+    .ayuda summary { font-weight: 700; font-size: 16px; cursor: pointer; }
+    .ayuda p { font-size: 16px; line-height: 1.55; margin: 8px 0 0; }
+  </style>
+</head>
+<body>
+  <header class="cabecera">
+    <nav class="menu" aria-label="Secciones">
+      <a href="./">Pronóstico</a>
+      <a href="radar.html">Radar</a>
+      <a href="tormentas.html">Tormentas</a>
+      <a href="aciertos.html">¿Cuánto acertamos?</a>
+    </nav>
+    <div class="marca">
+      <div class="marca-meteo" id="marca-meteo" aria-hidden="true"></div>
+      <div>
+        <h1>Ayuda y soporte</h1>
+        <p class="lema">Las dudas más comunes. Si no está acá, escribinos.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>Contacto</h2>
+      <p class="frase">Escribinos a <a href="mailto:hola@checlima.com.ar">hola@checlima.com.ar</a>. Respondemos lo antes posible.</p>
+      <p class="explicacion">Ante emergencias, seguí siempre las alertas oficiales del
+        <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">SMN</a> y de Defensa Civil.</p>
+    </section>
+
+    <section class="tarjeta ayuda">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿De dónde sale el pronóstico?</summary>
+        <p>Combinamos 7 modelos meteorológicos de distintos países y a cada uno le corregimos el error típico que tiene en cada
+          ciudad que medimos, comparando todos los días con lo que pasó de verdad en los aeropuertos. Cuánto acertamos está a la vista
+          en <a href="aciertos.html">¿Cuánto acertamos?</a>, incluso los días que perdemos.</p>
+      </details>
+      <details>
+        <summary>¿Quién es Meteo?</summary>
+        <p>Es nuestro asistente: un meteorito con cara que te cuenta el día. Cambia según el clima (paraguas, anteojos de sol,
+          bufanda…). Cuando hay una alerta, se pone serio y deja el humor de lado.</p>
+      </details>
+      <details>
+        <summary>No me llegan los avisos</summary>
+        <p>Revisá tres cosas: que hayas entrado con tu cuenta, que los avisos estén activados en <strong>Ajustes → Tus avisos</strong>
+          y que el celular le permita notificaciones a la app (en los Ajustes del celular). Los avisos de ida y vuelta del trabajo
+          llegan solo los días que marcaste como de trabajo, y solo si va a llover. Podés probar con <strong>Probar un aviso</strong>.</p>
+      </details>
+      <details>
+        <summary>¿Por qué pide mi ubicación?</summary>
+        <p>Para mostrarte el pronóstico del lugar exacto donde estás. Se usa solo en tu celular o navegador y no la guardamos.
+          Si no querés darla, podés elegir tu casa o cualquier ciudad.</p>
+      </details>
+      <details>
+        <summary>¿Necesito una cuenta?</summary>
+        <p>No. Sin cuenta ves el pronóstico de donde estás, las alertas y cualquier ciudad. Con cuenta (con Google) podés guardar tu
+          casa y tu trabajo y recibir avisos.</p>
+      </details>
+      <details id="borrar-cuenta">
+        <summary>¿Cómo borro mi cuenta y mis datos?</summary>
+        <p>En la app: <strong>Ajustes → Tu cuenta → Borrar mi cuenta</strong>. Se borra todo al instante: tu cuenta, tus lugares,
+          tu horario, tus preferencias y los celulares registrados para avisos.</p>
+        <p>Si ya no tenés la app, escribinos a <a href="mailto:hola@checlima.com.ar?subject=Borrar%20mi%20cuenta">hola@checlima.com.ar</a>
+          desde el mail de tu cuenta de Google, con el asunto "Borrar mi cuenta", y la borramos dentro de los 7 días.
+          Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p>
+      </details>
+      <details>
+        <summary>¿Qué muestra la página "Radar"?</summary>
+        <p>Las últimas 2 horas son imágenes del satélite: muestran las nubes de tormenta (en color), no la lluvia medida en el suelo,
+          así que una lluvia débil de nubes bajas puede no verse. Llegan con unos 40 minutos de demora. Las últimas imágenes de la
+          animación (⏩) son lo que pronostican los modelos para las próximas 2 horas. Para ver los radares del país, entrá al
+          <a href="https://www.smn.gob.ar/radar" target="_blank" rel="noopener">radar oficial del SMN</a>.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="fuentes"><a href="privacidad.html">Política de privacidad</a> · <a href="./">Volver al pronóstico</a></p>
+  </footer>
+  <script src="meteo.js?v=cielo1"></script>
+  <script>
+    document.getElementById("marca-meteo").innerHTML = meteoHTML("saludo", 64, "");
+    // Si se entra con #borrar-cuenta (link de Google Play), se abre esa respuesta
+    const pedida = location.hash && document.querySelector(location.hash);
+    if (pedida && pedida.tagName === "DETAILS") pedida.open = true;
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radar y satélite — Che, Clima</title>
+  <meta name="description" content="Las nubes de tormenta sobre Argentina en las últimas 2 horas (satélite GOES-19) y la lluvia que pronostican los modelos para las próximas 2.">
+  <meta name="theme-color" content="#1f5fbf">
+  <link rel="icon" type="image/png" href="icono-64.png">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="estilos.css?v=radar1">
+  <style>
+    .mapa-radar { height: min(70vh, 560px); border-radius: 14px; overflow: hidden; margin-top: 10px; background: var(--fondo); }
+    .controles-radar { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+    .controles-radar button { border: 0; border-radius: 12px; padding: 10px 16px; font-weight: 700; background: var(--marca); color: var(--tarjeta); cursor: pointer; }
+    .controles-radar input { flex: 1; }
+    .hora-radar { min-width: 64px; text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .escala { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-top: 10px; }
+    .escala span { flex: 1; }
+    .escala-texto { display: flex; justify-content: space-between; font-size: 12px; color: var(--suave); }
+  </style>
+</head>
+<body>
+  <header class="cabecera">
+    <nav class="menu" aria-label="Secciones">
+      <a href="./">Pronóstico</a>
+      <a href="radar.html" aria-current="page">Radar</a>
+      <a href="tormentas.html">Tormentas</a>
+      <a href="aciertos.html">¿Cuánto acertamos?</a>
+    </nav>
+    <div class="marca">
+      <span class="marca-icono" aria-hidden="true">📡</span>
+      <div>
+        <h1>Satélite y lluvia</h1>
+        <p class="lema">Las nubes de tormenta de las últimas 2 horas, vistas desde el satélite, y la lluvia que pronostican los modelos para las próximas 2.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <div id="mapa" class="mapa-radar" role="img" aria-label="Mapa con las nubes de tormenta y la lluvia pronosticada"></div>
+      <div class="controles-radar">
+        <button type="button" id="reproducir" aria-label="Pausar la animación">⏸</button>
+        <input type="range" id="cuadro" min="0" max="0" value="0" aria-label="Elegir la hora">
+        <span id="hora" class="hora-radar">–</span>
+      </div>
+      <p id="tipo" class="leyenda" style="margin:8px 0 0;font-weight:600">Satélite: nubes de tormenta</p>
+      <div id="escala-satelite">
+        <div class="escala" aria-hidden="true">
+          <span style="background:#c9c9c9"></span><span style="background:#1aa3ff"></span><span style="background:#0040c0"></span>
+          <span style="background:#30d030"></span><span style="background:#c8f000"></span><span style="background:#ffe600"></span><span style="background:#ff3000"></span>
+        </div>
+        <div class="escala-texto"><span>Nubes</span><span>Nubes altas</span><span>Tormenta</span><span>Tormenta fuerte</span></div>
+      </div>
+      <div id="escala-modelos" hidden>
+        <div class="escala" aria-hidden="true">
+          <span style="background:#88ddee"></span><span style="background:#0099cc"></span><span style="background:#0077aa"></span>
+          <span style="background:#ffee00"></span><span style="background:#ffaa00"></span><span style="background:#ff4400"></span><span style="background:#c10000"></span>
+        </div>
+        <div class="escala-texto"><span>Llovizna</span><span>Lluvia</span><span>Fuerte</span><span>Muy fuerte</span></div>
+      </div>
+      <p class="leyenda" id="estado">Cargando el satélite…</p>
+      <p class="leyenda" style="margin-top:4px">El satélite muestra las nubes de tormenta, no la lluvia medida en el suelo.
+        Para ver los radares del país: <a href="https://www.smn.gob.ar/radar" target="_blank" rel="noopener">radar oficial del SMN ↗</a></p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="aviso-legal"><strong>Información complementaria.</strong> Ante emergencias, seguí las alertas oficiales del
+      <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">SMN</a> y de Defensa Civil.</p>
+    <p class="actualizado"><a href="soporte.html">Ayuda</a> · <a href="privacidad.html">Privacidad</a> · <a href="mailto:hola@checlima.com.ar">hola@checlima.com.ar</a></p>
+    <p class="fuentes">
+      Satélite: imagen infrarroja de NOAA GOES-19 vía <a href="https://earthdata.nasa.gov/gibs" target="_blank" rel="noopener">NASA GIBS</a>.
+      Mapa: <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">Instituto Geográfico Nacional</a> (Argenmap) y © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.
+      Próximas 2 horas: promedio de 7 modelos vía <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0), en cuadros de 25 km o más grandes si el mapa está alejado.
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="radar.js?v=satelite2"></script>
+</body>
+</html>
